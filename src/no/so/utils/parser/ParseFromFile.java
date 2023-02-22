@@ -6,6 +6,8 @@ import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.yaml.snakeyaml.Yaml;
+
 public class ParseFromFile {
 	
 	/**
@@ -30,6 +32,22 @@ public class ParseFromFile {
 		if(splitted.length == 2) {
 			map.put(splitted[0], splitted[1].replaceAll("\\s", ""));
 		}
+	}
+
+	public Map<String,Object> parseConfig (Yaml config, String field){
+
+		return null;
+	}
+
+	public static void main (String args[]){
+
+		Map<String,String> confs = ParseFromFile.getStrKVPairs(Path.of("conf/config"),":");
+
+        Map<String,String> creds = ParseFromFile.getStrKVPairs(Path.of("conf/config"),":");
+
+        String host = confs.getOrDefault("host", "localhost");
+        int port = Integer.parseInt(confs.getOrDefault("port", "1883"));
+
 	}
 
 }

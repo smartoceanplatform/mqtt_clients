@@ -5,39 +5,75 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.concurrent.CompletableFuture;
 
-import com.hivemq.client.mqtt.mqtt3.message.connect.connack.Mqtt3ConnAck;
+import com.hivemq.client.mqtt.mqtt5.message.connect.connack.Mqtt5ConnAck;
+import org.yaml.snakeyaml.TypeDescription;
+import org.yaml.snakeyaml.Yaml;
+import org.yaml.snakeyaml.constructor.Constructor;
 
 public class AADIVirtualPublisher {
-	final static Path path = Path.of("/home/keila/smartoceanplatform/smartocean-messaging/samplesensordata/SFI_Austevoll_NordDestination"); //TODO change this
-	final static short minutes_interval = 10;
+	final static short minutes_interval = 3;
 
 
 	public static void main(String[] args) throws Exception {
 
-		final int seconds = minutes_interval * 60;
-		// create an MQTT client
-		final HiveBrokerClient hiveclient = new HiveBrokerClient(Path.of("config/config_dev"), Path.of(("creds/credentials")), "virtualProvider");
+		Path config = args.length > 0? Path.of(args[0]): Path.of("config/config.yaml");
 
+		if(Files.isReadable(config)){
+			final int seconds = minutes_interval * 60;
 
-		// publish a message to the topic "my/test/topic"
-		Files.list(path).forEach(xml -> 
+			Constructor constructor = new Constructor(HiveClientConfig.class);//Car.class is root
+			TypeDescription configDescription = new TypeDescription(HiveClientConfig.class);
+			configDescription.addPropertyParameters("Topics",Topic.class);
+			constructor.addTypeDescription(configDescription);
+			Yaml yaml = new Yaml(constructor);
+
+			// Load configs form YAML
+			final HiveClientConfig conf = yaml.load(Files.newInputStream(config));
+
+			// create an MQTT client
+			final HiveBrokerClient hiveclient = new HiveBrokerClient(conf);
+
+			// publish a message to the topics in config yaml
+			final Path path = Path.of(conf.getTopics().get(0).source); //TODO change this
+
+			Files.list(path).forEach(xml ->
 			{
 				try {
-					System.out.println("Trying to connect with broker...");
-					CompletableFuture<Mqtt3ConnAck> connAck = new CompletableFuture<Mqtt3ConnAck>();
-					connAck = hiveclient.getBrokerClient().connect();
-					hiveclient.getBrokerClient().publishWith().topic("smartocean/pd1/austevoll-nord").payload(UTF_8.encode(Files.readString(xml))).send();
-					System.out.println("Publishing data file: "+xml.toAbsolutePath().toString());
+					System.out.println("Trying to connect to broker...");
+					Mqtt5ConnAck connAck = hiveclient.getBrokerClient().connect();
+
+					if(!connAck.getReasonCode().isError()) {
+						hiveclient.getBrokerClient()
+								.toBlocking()
+								.publishWith()
+								.topic(conf.getTopics().get(0).publishTopic)
+								.qos(conf.getTopics().get(0)._getQos())
+								.payload(UTF_8.encode(Files.readString(xml))) //TODO parameter
+								.send();
+						System.out.println("Publishing data file: " + xml.toAbsolutePath().toString());
+						Thread.sleep(1000 * seconds);
+					}
+					else{
+						System.out.println("Error connecting to Broker");
+						//TODO deal with type of error to try reconnect
+					}
+				} catch (IOException | InterruptedException e) {
+					e.printStackTrace();
+					System.err.println("Error publishing data file: "+xml.toAbsolutePath().toString());
+				}
+				finally {
 					hiveclient.getBrokerClient().disconnect();
 					System.out.println("Disconnected");
-					Thread.sleep(1000*seconds);
-				} catch (IOException | InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-					System.err.println("Error publing data file: "+xml.toAbsolutePath().toString());
 				}
 			});
+		}
+
+		else if(args.length < 1 ) {
+			System.err.println("Please provide a valid path to the configuration file.");
+			System.exit(1);
+		}
+
+
 		}
 }
