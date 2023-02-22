@@ -51,7 +51,9 @@ public class AADIVirtualPublisher {
 								.qos(conf.getTopics().get(0)._getQos())
 								.payload(UTF_8.encode(Files.readString(xml))) //TODO parameter
 								.send();
-						System.out.println("Publishing data file: " + xml.toAbsolutePath().toString());
+						System.out.println("Published data file: " + xml.toAbsolutePath().toString());
+						hiveclient.getBrokerClient().disconnect();
+						System.out.println("Disconnected");
 						Thread.sleep(1000 * seconds);
 					}
 					else{
