@@ -1,7 +1,8 @@
-package no.so.broker.mqtt.hive.config;
+package no.so.broker.mqtt.hive;
 
 import com.hivemq.client.mqtt.datatypes.MqttQos;
 
+// Class automatically factored by yaml parser constructor
 public class Topic {
 
     private String publishTopic;

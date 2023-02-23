@@ -22,14 +22,14 @@ public class AustevollSubscriber {
 		if (Files.isReadable(config)) {
 
 			try {
-				Constructor constructor = new Constructor(HiveClientConfig.class);//Car.class is root
-				TypeDescription configDescription = new TypeDescription(HiveClientConfig.class);
-				configDescription.addPropertyParameters("Topics",Topic.class);
+				Constructor constructor = new Constructor(ClientConfig.class);//Car.class is root
+				TypeDescription configDescription = new TypeDescription(ClientConfig.class);
+				configDescription.addPropertyParameters("Topics", Topic.class);
 				constructor.addTypeDescription(configDescription);
 				Yaml yaml = new Yaml(constructor);
 
 				// Load configs form YAML
-				final HiveClientConfig conf = yaml.load(Files.newInputStream(Path.of("config/config_dev_pub.yaml")));
+				final ClientConfig conf = yaml.load(Files.newInputStream(Path.of("config/config_dev_pub.yaml")));
 
 				// create an MQTT client
 				final HiveBrokerClient hiveclient = new HiveBrokerClient(conf);

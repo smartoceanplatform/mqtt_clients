@@ -1,14 +1,18 @@
-package no.so.broker.mqtt.hive.config;
+package no.so.broker.mqtt.hive;
 
 import org.yaml.snakeyaml.TypeDescription;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.Constructor;
+import org.yaml.snakeyaml.introspector.BeanAccess;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Arrays;
 import java.util.List;
 
+// Class automatically factored by yaml parser constructor
 public class ClientConfig {
 
     private static ClientConfig instance = null; //singleton
@@ -19,6 +23,10 @@ public class ClientConfig {
     private Object authentication; //TODO
 
     private List<Topic> topics;
+
+    public ClientConfig() {
+
+    }
 
     public Object getAuthentication() {
         return authentication;
@@ -59,18 +67,16 @@ public class ClientConfig {
         this.topics = topics;
     }
 
-    private static ClientConfig loadFromFile(Path config) throws IOException {
+    public static ClientConfig loadFromFile(Path config) throws IOException {
 
-        Constructor constructor = new Constructor(ClientConfig.class);//Car.class is root
+        Constructor constructor = new Constructor(ClientConfig.class); //ClientConfig.class is root
         TypeDescription configDescription = new TypeDescription(ClientConfig.class);
         configDescription.addPropertyParameters("Topics", Topic.class);
         constructor.addTypeDescription(configDescription);
         Yaml yaml = new Yaml(constructor);
-        return yaml.load(Files.newInputStream(config));
-    }
-
-    public static ClientConfig loadSingletonInstance(Path config) throws IOException {
-        instance = loadFromFile(config);
+        yaml.setBeanAccess(BeanAccess.FIELD);
+        instance = yaml.load(Files.newInputStream(config));
+        yaml.setBeanAccess(BeanAccess.DEFAULT);
         return instance;
     }
 

@@ -7,11 +7,11 @@ public class HiveBrokerClient {
 	
 	private final Mqtt5BlockingClient client;
 
-	private final HiveClientConfig hiveClientConfig;
+	private final ClientConfig clientConfig;
 	
-	public HiveBrokerClient(HiveClientConfig conf) {
+	public HiveBrokerClient(ClientConfig conf) {
 
-		this.hiveClientConfig = conf;
+		this.clientConfig = conf;
 
 		this.client = Mqtt5Client.builder() //TODO config data persistence and responsetopic
 		        .identifier(conf.getClient_id())
@@ -24,6 +24,6 @@ public class HiveBrokerClient {
 
 	public Mqtt5BlockingClient getBrokerClient() { return this.client; }
 
-	public HiveClientConfig getBrokerClientConfig() {return this.hiveClientConfig;}
+	public ClientConfig getBrokerClientConfig() {return this.clientConfig;}
 
 }

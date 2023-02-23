@@ -7,35 +7,25 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 import com.hivemq.client.mqtt.mqtt5.message.connect.connack.Mqtt5ConnAck;
-import org.yaml.snakeyaml.TypeDescription;
-import org.yaml.snakeyaml.Yaml;
-import org.yaml.snakeyaml.constructor.Constructor;
 
 public class AADIVirtualPublisher {
-	final static short minutes_interval = 3;
-
 
 	public static void main(String[] args) throws Exception {
+		final short minutes_interval = 3;
+		final int seconds = minutes_interval * 60;
 
 		Path config = args.length > 0? Path.of(args[0]): Path.of("config/config.yaml");
 
 		if(Files.isReadable(config)){
-			final int seconds = minutes_interval * 60;
-
-			Constructor constructor = new Constructor(HiveClientConfig.class);//Car.class is root
-			TypeDescription configDescription = new TypeDescription(HiveClientConfig.class);
-			configDescription.addPropertyParameters("Topics",Topic.class);
-			constructor.addTypeDescription(configDescription);
-			Yaml yaml = new Yaml(constructor);
 
 			// Load configs form YAML
-			final HiveClientConfig conf = yaml.load(Files.newInputStream(config));
+			final ClientConfig conf = ClientConfig.loadFromFile(config);
 
 			// create an MQTT client
 			final HiveBrokerClient hiveclient = new HiveBrokerClient(conf);
 
 			// publish a message to the topics in config yaml
-			final Path path = Path.of(conf.getTopics().get(0).source); //TODO change this
+			final Path path = Path.of(conf.getTopics().get(0).getSource()); //TODO change this
 
 			Files.list(path).forEach(xml ->
 			{
@@ -47,13 +37,11 @@ public class AADIVirtualPublisher {
 						hiveclient.getBrokerClient()
 								.toBlocking()
 								.publishWith()
-								.topic(conf.getTopics().get(0).publishTopic)
-								.qos(conf.getTopics().get(0)._getQos())
-								.payload(UTF_8.encode(Files.readString(xml))) //TODO parameter
+								.topic(conf.getTopics().get(0).getPublishTopic())
+								.qos(conf.getTopics().get(0).getConfiguredQos())
+								.payload(UTF_8.encode(Files.readString(xml)))
 								.send();
 						System.out.println("Published data file: " + xml.toAbsolutePath().toString());
-						hiveclient.getBrokerClient().disconnect();
-						System.out.println("Disconnected");
 						Thread.sleep(1000 * seconds);
 					}
 					else{
