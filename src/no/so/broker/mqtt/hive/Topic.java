@@ -1,13 +1,13 @@
-package no.so.broker.mqtt.hive;
+package no.so.broker.mqtt.hive.config;
 
 import com.hivemq.client.mqtt.datatypes.MqttQos;
 
 public class Topic {
 
-    String publishTopic;
-    String subscribeTopic;
-    String source;
-    int qos;
+    private String publishTopic;
+    private String subscribeTopic;
+    private String source;
+    private int qos;
 
 
     public String getSource() {
@@ -21,14 +21,14 @@ public class Topic {
     /* Changes qos in yaml config into MqttQos Enum
      * https://hivemq.github.io/hivemq-mqtt-client/docs/mqtt-operations/publish/#quality-of-service-qos
      */
-    public MqttQos _getQos() {
+    public MqttQos getConfiguredQos() {
         this.qos =  qos < 0 && qos > 2? 1: qos; //0 - AT_MOST_ONCE  | 1 - AT_MOST_ONCE | 2 - EXACTLY_ONCE
         return MqttQos.fromCode(this.qos);
     }
 
     public int getQos() {return  this.qos;};
 
-    public void setQos(int qos) {
+    protected void setQos(int qos) {
         this.qos = qos;
     }
 
@@ -36,7 +36,7 @@ public class Topic {
         return subscribeTopic;
     }
 
-    public void setSubscribeTopic(String subscribe_topic) {
+    protected void setSubscribeTopic(String subscribe_topic) {
         this.subscribeTopic = subscribe_topic;
     }
 
@@ -44,7 +44,7 @@ public class Topic {
         return publishTopic;
     }
 
-    public void setPublishTopic(String publish_topic) {
+    protected void setPublishTopic(String publish_topic) {
         this.publishTopic = publish_topic;
     }
 }
