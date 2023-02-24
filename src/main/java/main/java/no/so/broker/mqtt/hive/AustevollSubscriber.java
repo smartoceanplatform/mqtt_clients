@@ -1,4 +1,4 @@
-package no.so.broker.mqtt.hive;
+package main.java.no.so.broker.mqtt.hive;
 
 import com.hivemq.client.mqtt.datatypes.MqttQos;
 import com.hivemq.client.mqtt.mqtt5.message.connect.connack.Mqtt5ConnAck;
@@ -54,6 +54,10 @@ public class AustevollSubscriber {
 	}
 	public static void logBrokerConnection(Mqtt5ConnAck connAck){
 		System.out.println("Connected to Broker "+connAck); //TODO observability - Log
+	}
+
+	public static void registerDataMetrics() {
+
 	}
 
 }

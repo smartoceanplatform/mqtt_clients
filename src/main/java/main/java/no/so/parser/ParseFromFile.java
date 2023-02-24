@@ -1,4 +1,4 @@
-package no.so.utils.parser;
+package main.java.no.so.utils.parser;
 
 import java.io.IOException;
 import java.nio.file.Files;

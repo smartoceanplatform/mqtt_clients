@@ -1,4 +1,4 @@
-package no.so.broker.mqtt.mosquitto;
+package main.java.no.so.broker.mqtt.mosquitto;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 

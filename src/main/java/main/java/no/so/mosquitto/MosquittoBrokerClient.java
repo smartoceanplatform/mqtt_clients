@@ -1,12 +1,11 @@
-package no.so.broker.mqtt.mosquitto;
+package main.java.no.so.broker.mqtt.mosquitto;
 
 import java.nio.file.Path;
 import java.util.Map;
 
+import main.java.no.so.utils.parser.ParseFromFile;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttException;
-
-import no.so.utils.parser.ParseFromFile;
 
 public class MosquittoBrokerClient {
 	

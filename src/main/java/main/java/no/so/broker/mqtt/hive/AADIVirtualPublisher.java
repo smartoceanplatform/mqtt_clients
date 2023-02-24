@@ -1,4 +1,4 @@
-package no.so.broker.mqtt.hive;
+package main.java.no.so.broker.mqtt.hive;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 

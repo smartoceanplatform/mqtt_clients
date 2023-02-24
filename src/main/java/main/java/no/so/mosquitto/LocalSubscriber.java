@@ -1,4 +1,4 @@
-package no.so.broker.mqtt.mosquitto;
+package main.java.no.so.broker.mqtt.mosquitto;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
