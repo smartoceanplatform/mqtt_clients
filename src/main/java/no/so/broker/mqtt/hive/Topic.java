@@ -1,4 +1,4 @@
-package main.java.no.so.broker.mqtt.hive;
+package no.so.broker.mqtt.hive;
 
 import com.hivemq.client.mqtt.datatypes.MqttQos;
 

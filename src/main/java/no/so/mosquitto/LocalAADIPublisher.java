@@ -1,4 +1,4 @@
-package main.java.no.so.mosquitto;
+package no.so.mosquitto;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 

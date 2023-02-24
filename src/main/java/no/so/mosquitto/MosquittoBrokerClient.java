@@ -1,9 +1,9 @@
-package main.java.no.so.mosquitto;
+package no.so.mosquitto;
 
 import java.nio.file.Path;
 import java.util.Map;
 
-import main.java.no.so.parser.ParseFromFile;
+import no.so.parser.ParseFromFile;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttException;
 
