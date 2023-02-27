@@ -6,7 +6,6 @@ import com.hivemq.client.mqtt.datatypes.MqttQos;
 public class Topic {
 
     private String publishTopic;
-    private String subscribeTopic;
     private String source;
     private int qos;
 
@@ -31,14 +30,6 @@ public class Topic {
 
     protected void setQos(int qos) {
         this.qos = qos;
-    }
-
-    public String getSubscribeTopic() {
-        return subscribeTopic;
-    }
-
-    protected void setSubscribeTopic(String subscribe_topic) {
-        this.subscribeTopic = subscribe_topic;
     }
 
     public String getPublishTopic() {
