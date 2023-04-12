@@ -42,7 +42,7 @@ public class AADIVirtualPublisher {
 								.payload(UTF_8.encode(Files.readString(xml)))
 								.send();
 						System.out.println("Published data file: " + xml.toAbsolutePath().toString());
-						Thread.sleep(1000 * seconds);
+						Thread.sleep(1000 * 30);
 					}
 					else{
 						System.out.println("Error connecting to Broker");

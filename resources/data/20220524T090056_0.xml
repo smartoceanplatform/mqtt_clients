@@ -1,0 +1,4132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Device ID="5650-1540" SessionID="5650-1540-2022-05-18T08:11:24Z" Descr="Seaguard II Platform" SerialNo="1540" ProdNo="5650" ProdName="Seaguard II" DeviceType="Instrument" ProtocolVer="6" xmlns="http://www.aadi.no/RTOutSchema">
+	<Time>2022-05-24T06:45:06.436Z</Time>
+	<TimeReceived>2022-05-24T09:00:53.5467297+00:00</TimeReceived>
+	<StatusCode>0</StatusCode>
+	<SystemInformation />
+	<Data SessionID="5650-1540-0-2022-05-18T11-48-13.429Z" GroupID="0" GroupDescr="Main">
+		<Time>2022-05-24T06:45:00Z</Time>
+		<RecordNumber>556</RecordNumber>
+		<SensorData ID="4060-762" Descr="Temperature #762" NodeTypeID="2110" SerialNo="762" ProdNo="4060" ProdName="Temperature Sensor" ProtocolVer="6">
+			<Parameters>
+				<Point ID="2" Descr="Temperature" Type="VT_R4" Format="%0.3f" Unit="Deg.C" RangeMin="-5" RangeMax="40">
+					<Value>9.875226</Value>
+				</Point>
+			</Parameters>
+		</SensorData>
+		<SensorData ID="5217-174" Descr="Tide Sensor #174" NodeTypeID="2020" SerialNo="174" ProdNo="5217" ProdName="Tide Sensor" ProtocolVer="6">
+			<Parameters>
+				<Point ID="0" Descr="Pressure" Type="VT_R4" Format="%0.3f" Unit="kPa" RangeMin="0" RangeMax="400">
+					<Value>336.1935</Value>
+				</Point>
+				<Point ID="1" Descr="Temperature" Type="VT_R4" Format="%0.3f" Unit="DegC" RangeMin="-5" RangeMax="35">
+					<Value>9.867535</Value>
+				</Point>
+				<Point ID="29" Descr="Tide Pressure" Type="VT_R4" Format="%0.3f" Unit="kPa" RangeMin="0" RangeMax="400">
+					<Value>336.2011</Value>
+				</Point>
+				<Point ID="30" Descr="Tide Level" Type="VT_R4" Format="%0.3f" Unit="m" RangeMin="-20" RangeMax="20">
+					<Value>-61.66613</Value>
+				</Point>
+			</Parameters>
+		</SensorData>
+		<SensorData ID="4835-435" Descr="Optode Sensor #435" NodeTypeID="2040" SerialNo="435" ProdNo="4835" ProdName="Optode Sensor" ProtocolVer="6">
+			<Parameters>
+				<Point ID="1" Descr="O2Concentration" Type="VT_R4" Format="%0.3f" Unit="uM" RangeMin="0" RangeMax="500">
+					<Value>373.0447</Value>
+				</Point>
+				<Point ID="2" Descr="AirSaturation" Type="VT_R4" Format="%0.3f" Unit="%" RangeMin="0" RangeMax="150">
+					<Value>105.4462</Value>
+				</Point>
+				<Point ID="3" Descr="Temperature" Type="VT_R4" Format="%0.3f" Unit="Deg.C" RangeMin="-5" RangeMax="40">
+					<Value>9.857331</Value>
+				</Point>
+			</Parameters>
+		</SensorData>
+		<SensorData ID="5400-87" Descr="Doppler Current Profiler Sensor" NodeTypeID="2000" SerialNo="87" ProdNo="5400" ProdName="Doppler Current Profiler Sensor" ProtocolVer="6">
+			<StatusCode>18</StatusCode>
+			<Parameters>
+				<Point ID="13" Descr="Noise Peak Level B1" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-80" RangeMax="0">
+					<Value>-54.47216</Value>
+				</Point>
+				<Point ID="14" Descr="Noise Peak Level B2" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-80" RangeMax="0">
+					<Value>-53.95966</Value>
+				</Point>
+				<Point ID="15" Descr="Noise Peak Level B3" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-80" RangeMax="0">
+					<Value>-54.95137</Value>
+				</Point>
+				<Point ID="16" Descr="Noise Peak Level B4" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-80" RangeMax="0">
+					<Value>-55.35901</Value>
+				</Point>
+				<Point ID="46" Descr="Noise Average Level B1" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-80" RangeMax="0">
+					<Value>-57.78034</Value>
+				</Point>
+				<Point ID="47" Descr="Noise Average Level B2" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-80" RangeMax="0">
+					<Value>-57.17755</Value>
+				</Point>
+				<Point ID="48" Descr="Noise Average Level B3" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-80" RangeMax="0">
+					<Value>-58.28392</Value>
+				</Point>
+				<Point ID="49" Descr="Noise Average Level B4" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-80" RangeMax="0">
+					<Value>-58.44138</Value>
+				</Point>
+				<Point ID="12" Descr="Record State" Type="VT_I4">
+					<Value>0</Value>
+				</Point>
+				<Point ID="0" Descr="Ping Count" Type="VT_I2" Format="%d" RangeMin="0" RangeMax="3600">
+					<Value>200</Value>
+				</Point>
+				<Vector ID="248" Descr="EventReg Values" Type="VT_ARRAY|VT_I4" Unit="Flags" Dimension="4">
+					<Value>0;0;0;0</Value>
+				</Vector>
+				<Profile ID="200" Descr="Profile">
+					<Column Index="1" Descr="Surface" SurfaceReferred="true" ColumnStartCellCenter="0" CellSize="2" NumCells="1" TransducerDirection="Up" SurfaceCellColumn="true" CellCenterSpacing="2">
+						<CellAttributes>
+							<Point ID="50" Descr="Cell State1" Type="VT_I2" RangeMin="-32768" RangeMax="32767" />
+							<Point ID="49" Descr="Cell State2" Type="VT_I2" RangeMin="-32768" RangeMax="32767" />
+							<Point ID="2" Descr="Horizontal Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="3" Descr="Direction" Type="VT_R4" Format="%.2f" Unit="Deg.M" RangeMin="0" RangeMax="360" />
+							<Point ID="4" Descr="North Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="5" Descr="East Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="6" Descr="Vertical Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="7" Descr="SP Stdev Horizontal" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="38" Descr="SP Stdev Beam123" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="39" Descr="SP Stdev Beam124" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="40" Descr="SP Stdev Beam134" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="41" Descr="SP Stdev Beam234" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="42" Descr="SP Stdev AutoBeam" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="8" Descr="Strength" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-80" RangeMax="0" />
+							<Point ID="47" Descr="Horizontal Speed AutoBeam" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="48" Descr="Direction AutoBeam" Type="VT_R4" Format="%.2f" Unit="Deg.M" RangeMin="0" RangeMax="360" />
+							<Point ID="9" Descr="North Beam123" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="10" Descr="North Beam124" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="11" Descr="North Beam134" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="12" Descr="North Beam234" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="43" Descr="North AutoBeam" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="13" Descr="East Beam123" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="14" Descr="East Beam124" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="15" Descr="East Beam134" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="16" Descr="East Beam234" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="44" Descr="East AutoBeam" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="17" Descr="Vertical Beam123" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="18" Descr="Vertical Beam124" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="19" Descr="Vertical Beam134" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="20" Descr="Vertical Beam234" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="45" Descr="Vertical AutoBeam" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="21" Descr="Beam1 Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="22" Descr="Beam2 Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="23" Descr="Beam3 Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="24" Descr="Beam4 Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="25" Descr="Beam1 Strength" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-70" RangeMax="0" />
+							<Point ID="26" Descr="Beam2 Strength" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-70" RangeMax="0" />
+							<Point ID="27" Descr="Beam3 Strength" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-70" RangeMax="0" />
+							<Point ID="28" Descr="Beam4 Strength" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-70" RangeMax="0" />
+							<Point ID="29" Descr="Beam1 Stdev" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="30" Descr="Beam2 Stdev" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="31" Descr="Beam3 Stdev" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="32" Descr="Beam4 Stdev" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="33" Descr="Cross Difference" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+						</CellAttributes>
+						<Cell Index="0">
+							<Point ID="50">
+								<Value>0</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>29.95843</Value>
+							</Point>
+							<Point ID="3">
+								<Value>264.1669</Value>
+							</Point>
+							<Point ID="4">
+								<Value>-3.044728</Value>
+							</Point>
+							<Point ID="5">
+								<Value>-29.8033</Value>
+							</Point>
+							<Point ID="6">
+								<Value>6.610579</Value>
+							</Point>
+							<Point ID="7">
+								<Value>36.1218</Value>
+							</Point>
+							<Point ID="38">
+								<Value>50.08223</Value>
+							</Point>
+							<Point ID="39">
+								<Value>50.1934</Value>
+							</Point>
+							<Point ID="40">
+								<Value>48.48364</Value>
+							</Point>
+							<Point ID="41">
+								<Value>48.42622</Value>
+							</Point>
+							<Point ID="42">
+								<Value>36.1218</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-3.016073</Value>
+							</Point>
+							<Point ID="47">
+								<Value>29.95843</Value>
+							</Point>
+							<Point ID="48">
+								<Value>264.1669</Value>
+							</Point>
+							<Point ID="9">
+								<Value>1.575351</Value>
+							</Point>
+							<Point ID="10">
+								<Value>-8.816642</Value>
+							</Point>
+							<Point ID="11">
+								<Value>-7.741817</Value>
+							</Point>
+							<Point ID="12">
+								<Value>2.804199</Value>
+							</Point>
+							<Point ID="43">
+								<Value>-3.044728</Value>
+							</Point>
+							<Point ID="13">
+								<Value>-23.95347</Value>
+							</Point>
+							<Point ID="14">
+								<Value>-25.18451</Value>
+							</Point>
+							<Point ID="15">
+								<Value>-35.57888</Value>
+							</Point>
+							<Point ID="16">
+								<Value>-34.49633</Value>
+							</Point>
+							<Point ID="44">
+								<Value>-29.8033</Value>
+							</Point>
+							<Point ID="17">
+								<Value>4.895534</Value>
+							</Point>
+							<Point ID="18">
+								<Value>8.574883</Value>
+							</Point>
+							<Point ID="19">
+								<Value>4.853805</Value>
+							</Point>
+							<Point ID="20">
+								<Value>8.118093</Value>
+							</Point>
+							<Point ID="45">
+								<Value>6.610579</Value>
+							</Point>
+							<Point ID="21">
+								<Value>-11.72223</Value>
+							</Point>
+							<Point ID="22">
+								<Value>2.545513</Value>
+							</Point>
+							<Point ID="23">
+								<Value>1.90467</Value>
+							</Point>
+							<Point ID="24">
+								<Value>-18.65912</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-2.906535</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-3.487552</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-3.819893</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-1.850314</Value>
+							</Point>
+							<Point ID="29">
+								<Value>19.90625</Value>
+							</Point>
+							<Point ID="30">
+								<Value>21.8954</Value>
+							</Point>
+							<Point ID="31">
+								<Value>19.58518</Value>
+							</Point>
+							<Point ID="32">
+								<Value>22.55938</Value>
+							</Point>
+							<Point ID="33">
+								<Value>6.296045</Value>
+							</Point>
+						</Cell>
+					</Column>
+					<Column Index="2" Descr="Column 1" SurfaceReferred="true" ColumnStartCellCenter="2" CellSize="1" NumCells="20" TransducerDirection="Up" CellCenterSpacing="1">
+						<CellAttributes>
+							<Point ID="50" Descr="Cell State1" Type="VT_I2" RangeMin="-32768" RangeMax="32767" />
+							<Point ID="49" Descr="Cell State2" Type="VT_I2" RangeMin="-32768" RangeMax="32767" />
+							<Point ID="2" Descr="Horizontal Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="3" Descr="Direction" Type="VT_R4" Format="%.2f" Unit="Deg.M" RangeMin="0" RangeMax="360" />
+							<Point ID="4" Descr="North Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="5" Descr="East Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="6" Descr="Vertical Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="7" Descr="SP Stdev Horizontal" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="38" Descr="SP Stdev Beam123" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="39" Descr="SP Stdev Beam124" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="40" Descr="SP Stdev Beam134" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="41" Descr="SP Stdev Beam234" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="42" Descr="SP Stdev AutoBeam" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="8" Descr="Strength" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-80" RangeMax="0" />
+							<Point ID="47" Descr="Horizontal Speed AutoBeam" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="48" Descr="Direction AutoBeam" Type="VT_R4" Format="%.2f" Unit="Deg.M" RangeMin="0" RangeMax="360" />
+							<Point ID="9" Descr="North Beam123" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="10" Descr="North Beam124" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="11" Descr="North Beam134" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="12" Descr="North Beam234" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="43" Descr="North AutoBeam" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="13" Descr="East Beam123" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="14" Descr="East Beam124" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="15" Descr="East Beam134" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="16" Descr="East Beam234" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="44" Descr="East AutoBeam" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="17" Descr="Vertical Beam123" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="18" Descr="Vertical Beam124" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="19" Descr="Vertical Beam134" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="20" Descr="Vertical Beam234" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="45" Descr="Vertical AutoBeam" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="21" Descr="Beam1 Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="22" Descr="Beam2 Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="23" Descr="Beam3 Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="24" Descr="Beam4 Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="25" Descr="Beam1 Strength" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-70" RangeMax="0" />
+							<Point ID="26" Descr="Beam2 Strength" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-70" RangeMax="0" />
+							<Point ID="27" Descr="Beam3 Strength" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-70" RangeMax="0" />
+							<Point ID="28" Descr="Beam4 Strength" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-70" RangeMax="0" />
+							<Point ID="29" Descr="Beam1 Stdev" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="30" Descr="Beam2 Stdev" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="31" Descr="Beam3 Stdev" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="32" Descr="Beam4 Stdev" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="33" Descr="Cross Difference" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+						</CellAttributes>
+						<Cell Index="0">
+							<Point ID="50">
+								<Value>8256</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<StatusCode>83</StatusCode>
+								<Value>11.73502</Value>
+							</Point>
+							<Point ID="3">
+								<StatusCode>83</StatusCode>
+								<Value>239.4609</Value>
+							</Point>
+							<Point ID="4">
+								<StatusCode>83</StatusCode>
+								<Value>-5.96287</Value>
+							</Point>
+							<Point ID="5">
+								<StatusCode>83</StatusCode>
+								<Value>-10.10717</Value>
+							</Point>
+							<Point ID="6">
+								<StatusCode>83</StatusCode>
+								<Value>-2.430422</Value>
+							</Point>
+							<Point ID="7">
+								<StatusCode>83</StatusCode>
+								<Value>38.5777</Value>
+							</Point>
+							<Point ID="38">
+								<StatusCode>83</StatusCode>
+								<Value>52.36739</Value>
+							</Point>
+							<Point ID="39">
+								<StatusCode>83</StatusCode>
+								<Value>60.83376</Value>
+							</Point>
+							<Point ID="40">
+								<StatusCode>83</StatusCode>
+								<Value>59.31118</Value>
+							</Point>
+							<Point ID="41">
+								<StatusCode>83</StatusCode>
+								<Value>50.69151</Value>
+							</Point>
+							<Point ID="42">
+								<Value>38.5777</Value>
+							</Point>
+							<Point ID="8">
+								<StatusCode>83</StatusCode>
+								<Value>-12.28043</Value>
+							</Point>
+							<Point ID="47">
+								<Value>11.73502</Value>
+							</Point>
+							<Point ID="48">
+								<Value>239.4609</Value>
+							</Point>
+							<Point ID="9">
+								<StatusCode>83</StatusCode>
+								<Value>0.08016144</Value>
+							</Point>
+							<Point ID="10">
+								<StatusCode>83</StatusCode>
+								<Value>-13.43135</Value>
+							</Point>
+							<Point ID="11">
+								<StatusCode>83</StatusCode>
+								<Value>-12.09031</Value>
+							</Point>
+							<Point ID="12">
+								<StatusCode>83</StatusCode>
+								<Value>1.590018</Value>
+							</Point>
+							<Point ID="43">
+								<Value>-5.96287</Value>
+							</Point>
+							<Point ID="13">
+								<StatusCode>83</StatusCode>
+								<Value>-2.546455</Value>
+							</Point>
+							<Point ID="14">
+								<StatusCode>83</StatusCode>
+								<Value>-4.073265</Value>
+							</Point>
+							<Point ID="15">
+								<StatusCode>83</StatusCode>
+								<Value>-17.57196</Value>
+							</Point>
+							<Point ID="16">
+								<StatusCode>83</StatusCode>
+								<Value>-16.23701</Value>
+							</Point>
+							<Point ID="44">
+								<Value>-10.10717</Value>
+							</Point>
+							<Point ID="17">
+								<StatusCode>83</StatusCode>
+								<Value>-4.638473</Value>
+							</Point>
+							<Point ID="18">
+								<StatusCode>83</StatusCode>
+								<Value>0.09323553</Value>
+							</Point>
+							<Point ID="19">
+								<StatusCode>83</StatusCode>
+								<Value>-4.729438</Value>
+							</Point>
+							<Point ID="20">
+								<StatusCode>83</StatusCode>
+								<Value>-0.4470142</Value>
+							</Point>
+							<Point ID="45">
+								<Value>-2.430422</Value>
+							</Point>
+							<Point ID="21">
+								<StatusCode>83</StatusCode>
+								<Value>3.414975</Value>
+							</Point>
+							<Point ID="22">
+								<StatusCode>83</StatusCode>
+								<Value>4.992742</Value>
+							</Point>
+							<Point ID="23">
+								<StatusCode>83</StatusCode>
+								<Value>4.912082</Value>
+							</Point>
+							<Point ID="24">
+								<StatusCode>83</StatusCode>
+								<Value>-4.838608</Value>
+							</Point>
+							<Point ID="25">
+								<StatusCode>83</StatusCode>
+								<Value>-12.58231</Value>
+							</Point>
+							<Point ID="26">
+								<StatusCode>83</StatusCode>
+								<Value>-10.60694</Value>
+							</Point>
+							<Point ID="27">
+								<StatusCode>83</StatusCode>
+								<Value>-11.16924</Value>
+							</Point>
+							<Point ID="28">
+								<StatusCode>83</StatusCode>
+								<Value>-14.76324</Value>
+							</Point>
+							<Point ID="29">
+								<StatusCode>83</StatusCode>
+								<Value>27.96205</Value>
+							</Point>
+							<Point ID="30">
+								<StatusCode>83</StatusCode>
+								<Value>18.38607</Value>
+							</Point>
+							<Point ID="31">
+								<StatusCode>83</StatusCode>
+								<Value>21.27193</Value>
+							</Point>
+							<Point ID="32">
+								<StatusCode>83</StatusCode>
+								<Value>23.98294</Value>
+							</Point>
+							<Point ID="33">
+								<StatusCode>83</StatusCode>
+								<Value>8.172925</Value>
+							</Point>
+						</Cell>
+						<Cell Index="1">
+							<Point ID="50">
+								<Value>8384</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<StatusCode>83</StatusCode>
+								<Value>4.764001</Value>
+							</Point>
+							<Point ID="3">
+								<StatusCode>83</StatusCode>
+								<Value>186.8079</Value>
+							</Point>
+							<Point ID="4">
+								<StatusCode>83</StatusCode>
+								<Value>-4.730411</Value>
+							</Point>
+							<Point ID="5">
+								<StatusCode>83</StatusCode>
+								<Value>-0.5647272</Value>
+							</Point>
+							<Point ID="6">
+								<StatusCode>83</StatusCode>
+								<Value>-1.01828</Value>
+							</Point>
+							<Point ID="7">
+								<StatusCode>83</StatusCode>
+								<Value>51.43848</Value>
+							</Point>
+							<Point ID="38">
+								<StatusCode>83</StatusCode>
+								<Value>67.11417</Value>
+							</Point>
+							<Point ID="39">
+								<StatusCode>83</StatusCode>
+								<Value>79.25688</Value>
+							</Point>
+							<Point ID="40">
+								<StatusCode>83</StatusCode>
+								<Value>71.68356</Value>
+							</Point>
+							<Point ID="41">
+								<StatusCode>83</StatusCode>
+								<Value>59.3551</Value>
+							</Point>
+							<Point ID="42">
+								<Value>51.43848</Value>
+							</Point>
+							<Point ID="8">
+								<StatusCode>83</StatusCode>
+								<Value>-18.45681</Value>
+							</Point>
+							<Point ID="47">
+								<Value>4.764001</Value>
+							</Point>
+							<Point ID="48">
+								<Value>186.8079</Value>
+							</Point>
+							<Point ID="9">
+								<StatusCode>83</StatusCode>
+								<Value>-4.682025</Value>
+							</Point>
+							<Point ID="10">
+								<StatusCode>83</StatusCode>
+								<Value>-4.888246</Value>
+							</Point>
+							<Point ID="11">
+								<StatusCode>83</StatusCode>
+								<Value>-4.776273</Value>
+							</Point>
+							<Point ID="12">
+								<StatusCode>83</StatusCode>
+								<Value>-4.575096</Value>
+							</Point>
+							<Point ID="43">
+								<Value>-4.730411</Value>
+							</Point>
+							<Point ID="13">
+								<StatusCode>83</StatusCode>
+								<Value>-0.4083357</Value>
+							</Point>
+							<Point ID="14">
+								<StatusCode>83</StatusCode>
+								<Value>-0.5175259</Value>
+							</Point>
+							<Point ID="15">
+								<StatusCode>83</StatusCode>
+								<Value>-0.7211027</Value>
+							</Point>
+							<Point ID="16">
+								<StatusCode>83</StatusCode>
+								<Value>-0.6119446</Value>
+							</Point>
+							<Point ID="44">
+								<Value>-0.5647272</Value>
+							</Point>
+							<Point ID="17">
+								<StatusCode>83</StatusCode>
+								<Value>-1.048098</Value>
+							</Point>
+							<Point ID="18">
+								<StatusCode>83</StatusCode>
+								<Value>-0.9880807</Value>
+							</Point>
+							<Point ID="19">
+								<StatusCode>83</StatusCode>
+								<Value>-1.058574</Value>
+							</Point>
+							<Point ID="20">
+								<StatusCode>83</StatusCode>
+								<Value>-0.9783689</Value>
+							</Point>
+							<Point ID="45">
+								<Value>-1.01828</Value>
+							</Point>
+							<Point ID="21">
+								<StatusCode>83</StatusCode>
+								<Value>2.444036</Value>
+							</Point>
+							<Point ID="22">
+								<StatusCode>83</StatusCode>
+								<Value>2.378494</Value>
+							</Point>
+							<Point ID="23">
+								<StatusCode>83</StatusCode>
+								<Value>-0.374536</Value>
+							</Point>
+							<Point ID="24">
+								<StatusCode>83</StatusCode>
+								<Value>-0.4359082</Value>
+							</Point>
+							<Point ID="25">
+								<StatusCode>83</StatusCode>
+								<Value>-15.34764</Value>
+							</Point>
+							<Point ID="26">
+								<StatusCode>83</StatusCode>
+								<Value>-19.40197</Value>
+							</Point>
+							<Point ID="27">
+								<StatusCode>83</StatusCode>
+								<Value>-20.17552</Value>
+							</Point>
+							<Point ID="28">
+								<StatusCode>83</StatusCode>
+								<Value>-18.90209</Value>
+							</Point>
+							<Point ID="29">
+								<StatusCode>83</StatusCode>
+								<Value>38.22524</Value>
+							</Point>
+							<Point ID="30">
+								<StatusCode>83</StatusCode>
+								<Value>26.86117</Value>
+							</Point>
+							<Point ID="31">
+								<StatusCode>83</StatusCode>
+								<Value>24.44626</Value>
+							</Point>
+							<Point ID="32">
+								<StatusCode>83</StatusCode>
+								<Value>28.24918</Value>
+							</Point>
+							<Point ID="33">
+								<StatusCode>83</StatusCode>
+								<Value>0.1269141</Value>
+							</Point>
+						</Cell>
+						<Cell Index="2">
+							<Point ID="50">
+								<Value>192</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>4.527443</Value>
+							</Point>
+							<Point ID="3">
+								<Value>279.7056</Value>
+							</Point>
+							<Point ID="4">
+								<Value>0.7632626</Value>
+							</Point>
+							<Point ID="5">
+								<Value>-4.462642</Value>
+							</Point>
+							<Point ID="6">
+								<Value>-0.634507</Value>
+							</Point>
+							<Point ID="7">
+								<Value>52.06833</Value>
+							</Point>
+							<Point ID="38">
+								<Value>75.6851</Value>
+							</Point>
+							<Point ID="39">
+								<Value>73.07967</Value>
+							</Point>
+							<Point ID="40">
+								<Value>66.29105</Value>
+							</Point>
+							<Point ID="41">
+								<Value>69.1093</Value>
+							</Point>
+							<Point ID="42">
+								<Value>52.06833</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-19.12836</Value>
+							</Point>
+							<Point ID="47">
+								<Value>4.527443</Value>
+							</Point>
+							<Point ID="48">
+								<Value>279.7056</Value>
+							</Point>
+							<Point ID="9">
+								<Value>-0.8312333</Value>
+							</Point>
+							<Point ID="10">
+								<Value>2.551345</Value>
+							</Point>
+							<Point ID="11">
+								<Value>2.376159</Value>
+							</Point>
+							<Point ID="12">
+								<Value>-1.043222</Value>
+							</Point>
+							<Point ID="43">
+								<Value>0.7632626</Value>
+							</Point>
+							<Point ID="13">
+								<Value>-6.274269</Value>
+							</Point>
+							<Point ID="14">
+								<Value>-6.05136</Value>
+							</Point>
+							<Point ID="15">
+								<Value>-2.678893</Value>
+							</Point>
+							<Point ID="16">
+								<Value>-2.846048</Value>
+							</Point>
+							<Point ID="44">
+								<Value>-4.462642</Value>
+							</Point>
+							<Point ID="17">
+								<Value>-0.09209715</Value>
+							</Point>
+							<Point ID="18">
+								<Value>-1.263844</Value>
+							</Point>
+							<Point ID="19">
+								<Value>-0.05550002</Value>
+							</Point>
+							<Point ID="20">
+								<Value>-1.126586</Value>
+							</Point>
+							<Point ID="45">
+								<Value>-0.634507</Value>
+							</Point>
+							<Point ID="21">
+								<Value>-1.451587</Value>
+							</Point>
+							<Point ID="22">
+								<Value>2.262273</Value>
+							</Point>
+							<Point ID="23">
+								<Value>1.388686</Value>
+							</Point>
+							<Point ID="24">
+								<Value>-0.2915893</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-18.2898</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-19.55735</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-20.49664</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-18.16967</Value>
+							</Point>
+							<Point ID="29">
+								<Value>27.76497</Value>
+							</Point>
+							<Point ID="30">
+								<Value>33.23131</Value>
+							</Point>
+							<Point ID="31">
+								<Value>28.33858</Value>
+							</Point>
+							<Point ID="32">
+								<Value>29.11903</Value>
+							</Point>
+							<Point ID="33">
+								<Value>-2.033584</Value>
+							</Point>
+						</Cell>
+						<Cell Index="3">
+							<Point ID="50">
+								<Value>128</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>0.5606232</Value>
+							</Point>
+							<Point ID="3">
+								<Value>47.59451</Value>
+							</Point>
+							<Point ID="4">
+								<Value>0.3780693</Value>
+							</Point>
+							<Point ID="5">
+								<Value>0.413959</Value>
+							</Point>
+							<Point ID="6">
+								<Value>0.1708391</Value>
+							</Point>
+							<Point ID="7">
+								<Value>44.31605</Value>
+							</Point>
+							<Point ID="38">
+								<Value>67.17107</Value>
+							</Point>
+							<Point ID="39">
+								<Value>64.38982</Value>
+							</Point>
+							<Point ID="40">
+								<Value>61.90462</Value>
+							</Point>
+							<Point ID="41">
+								<Value>64.4944</Value>
+							</Point>
+							<Point ID="42">
+								<Value>44.31605</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-18.11591</Value>
+							</Point>
+							<Point ID="47">
+								<Value>0.5606232</Value>
+							</Point>
+							<Point ID="48">
+								<Value>47.59451</Value>
+							</Point>
+							<Point ID="9">
+								<Value>5.767014</Value>
+							</Point>
+							<Point ID="10">
+								<Value>-6.280935</Value>
+							</Point>
+							<Point ID="11">
+								<Value>-5.093149</Value>
+							</Point>
+							<Point ID="12">
+								<Value>7.119355</Value>
+							</Point>
+							<Point ID="43">
+								<Value>0.3780693</Value>
+							</Point>
+							<Point ID="13">
+								<Value>7.15753</Value>
+							</Point>
+							<Point ID="14">
+								<Value>5.799994</Value>
+							</Point>
+							<Point ID="15">
+								<Value>-6.247228</Value>
+							</Point>
+							<Point ID="16">
+								<Value>-5.054465</Value>
+							</Point>
+							<Point ID="44">
+								<Value>0.413959</Value>
+							</Point>
+							<Point ID="17">
+								<Value>-1.813761</Value>
+							</Point>
+							<Point ID="18">
+								<Value>2.429867</Value>
+							</Point>
+							<Point ID="19">
+								<Value>-1.865549</Value>
+							</Point>
+							<Point ID="20">
+								<Value>1.9328</Value>
+							</Point>
+							<Point ID="45">
+								<Value>0.1708391</Value>
+							</Point>
+							<Point ID="21">
+								<Value>1.639189</Value>
+							</Point>
+							<Point ID="22">
+								<Value>-2.212263</Value>
+							</Point>
+							<Point ID="23">
+								<Value>1.697656</Value>
+							</Point>
+							<Point ID="24">
+								<Value>-1.742485</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-17.71512</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-18.02902</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-19.79552</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-16.92396</Value>
+							</Point>
+							<Point ID="29">
+								<Value>24.58774</Value>
+							</Point>
+							<Point ID="30">
+								<Value>30.32095</Value>
+							</Point>
+							<Point ID="31">
+								<Value>27.62912</Value>
+							</Point>
+							<Point ID="32">
+								<Value>27.82181</Value>
+							</Point>
+							<Point ID="33">
+								<Value>7.291594</Value>
+							</Point>
+						</Cell>
+						<Cell Index="4">
+							<Point ID="50">
+								<Value>128</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>3.63463</Value>
+							</Point>
+							<Point ID="3">
+								<Value>159.407</Value>
+							</Point>
+							<Point ID="4">
+								<Value>-3.402386</Value>
+							</Point>
+							<Point ID="5">
+								<Value>1.278399</Value>
+							</Point>
+							<Point ID="6">
+								<Value>1.354734</Value>
+							</Point>
+							<Point ID="7">
+								<Value>44.96259</Value>
+							</Point>
+							<Point ID="38">
+								<Value>61.66961</Value>
+							</Point>
+							<Point ID="39">
+								<Value>64.63757</Value>
+							</Point>
+							<Point ID="40">
+								<Value>63.04802</Value>
+							</Point>
+							<Point ID="41">
+								<Value>59.79112</Value>
+							</Point>
+							<Point ID="42">
+								<Value>44.96259</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-17.2507</Value>
+							</Point>
+							<Point ID="47">
+								<Value>3.63463</Value>
+							</Point>
+							<Point ID="48">
+								<Value>159.407</Value>
+							</Point>
+							<Point ID="9">
+								<Value>-3.517933</Value>
+							</Point>
+							<Point ID="10">
+								<Value>-3.275016</Value>
+							</Point>
+							<Point ID="11">
+								<Value>-3.280558</Value>
+							</Point>
+							<Point ID="12">
+								<Value>-3.536037</Value>
+							</Point>
+							<Point ID="43">
+								<Value>-3.402386</Value>
+							</Point>
+							<Point ID="13">
+								<Value>1.144654</Value>
+							</Point>
+							<Point ID="14">
+								<Value>1.162996</Value>
+							</Point>
+							<Point ID="15">
+								<Value>1.406191</Value>
+							</Point>
+							<Point ID="16">
+								<Value>1.399755</Value>
+							</Point>
+							<Point ID="44">
+								<Value>1.278399</Value>
+							</Point>
+							<Point ID="17">
+								<Value>1.394751</Value>
+							</Point>
+							<Point ID="18">
+								<Value>1.294575</Value>
+							</Point>
+							<Point ID="19">
+								<Value>1.397289</Value>
+							</Point>
+							<Point ID="20">
+								<Value>1.332317</Value>
+							</Point>
+							<Point ID="45">
+								<Value>1.354734</Value>
+							</Point>
+							<Point ID="21">
+								<Value>0.3626269</Value>
+							</Point>
+							<Point ID="22">
+								<Value>-0.5933985</Value>
+							</Point>
+							<Point ID="23">
+								<Value>-2.696084</Value>
+							</Point>
+							<Point ID="24">
+								<Value>-1.589995</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-16.9958</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-17.23563</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-18.93497</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-15.83639</Value>
+							</Point>
+							<Point ID="29">
+								<Value>27.61934</Value>
+							</Point>
+							<Point ID="30">
+								<Value>26.21189</Value>
+							</Point>
+							<Point ID="31">
+								<Value>25.56992</Value>
+							</Point>
+							<Point ID="32">
+								<Value>26.12241</Value>
+							</Point>
+							<Point ID="33">
+								<Value>-0.1500635</Value>
+							</Point>
+						</Cell>
+						<Cell Index="5">
+							<Point ID="50">
+								<Value>192</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>5.888399</Value>
+							</Point>
+							<Point ID="3">
+								<Value>305.3333</Value>
+							</Point>
+							<Point ID="4">
+								<Value>3.405444</Value>
+							</Point>
+							<Point ID="5">
+								<Value>-4.803769</Value>
+							</Point>
+							<Point ID="6">
+								<Value>0.5084485</Value>
+							</Point>
+							<Point ID="7">
+								<Value>49.63619</Value>
+							</Point>
+							<Point ID="38">
+								<Value>71.00152</Value>
+							</Point>
+							<Point ID="39">
+								<Value>68.60297</Value>
+							</Point>
+							<Point ID="40">
+								<Value>69.20158</Value>
+							</Point>
+							<Point ID="41">
+								<Value>71.69047</Value>
+							</Point>
+							<Point ID="42">
+								<Value>49.63619</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-17.13189</Value>
+							</Point>
+							<Point ID="47">
+								<Value>5.888399</Value>
+							</Point>
+							<Point ID="48">
+								<Value>305.3333</Value>
+							</Point>
+							<Point ID="9">
+								<Value>-2.755753</Value>
+							</Point>
+							<Point ID="10">
+								<Value>11.37628</Value>
+							</Point>
+							<Point ID="11">
+								<Value>9.65726</Value>
+							</Point>
+							<Point ID="12">
+								<Value>-4.656018</Value>
+							</Point>
+							<Point ID="43">
+								<Value>3.405444</Value>
+							</Point>
+							<Point ID="13">
+								<Value>-12.86994</Value>
+							</Point>
+							<Point ID="14">
+								<Value>-10.95927</Value>
+							</Point>
+							<Point ID="15">
+								<Value>3.166826</Value>
+							</Point>
+							<Point ID="16">
+								<Value>1.447301</Value>
+							</Point>
+							<Point ID="44">
+								<Value>-4.803769</Value>
+							</Point>
+							<Point ID="17">
+								<Value>2.82884</Value>
+							</Point>
+							<Point ID="18">
+								<Value>-2.134384</Value>
+							</Point>
+							<Point ID="19">
+								<Value>2.914893</Value>
+							</Point>
+							<Point ID="20">
+								<Value>-1.575555</Value>
+							</Point>
+							<Point ID="45">
+								<Value>0.5084485</Value>
+							</Point>
+							<Point ID="21">
+								<Value>-5.075607</Value>
+							</Point>
+							<Point ID="22">
+								<Value>2.238699</Value>
+							</Point>
+							<Point ID="23">
+								<Value>-0.3796484</Value>
+							</Point>
+							<Point ID="24">
+								<Value>0.8773339</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-17.18692</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-17.41118</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-17.58398</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-16.34548</Value>
+							</Point>
+							<Point ID="29">
+								<Value>27.10102</Value>
+							</Point>
+							<Point ID="30">
+								<Value>31.15124</Value>
+							</Point>
+							<Point ID="31">
+								<Value>28.65057</Value>
+							</Point>
+							<Point ID="32">
+								<Value>29.25662</Value>
+							</Point>
+							<Point ID="33">
+								<Value>-8.571289</Value>
+							</Point>
+						</Cell>
+						<Cell Index="6">
+							<Point ID="50">
+								<Value>192</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>5.012899</Value>
+							</Point>
+							<Point ID="3">
+								<Value>337.3343</Value>
+							</Point>
+							<Point ID="4">
+								<Value>4.625745</Value>
+							</Point>
+							<Point ID="5">
+								<Value>-1.931744</Value>
+							</Point>
+							<Point ID="6">
+								<Value>0.3123894</Value>
+							</Point>
+							<Point ID="7">
+								<Value>47.40615</Value>
+							</Point>
+							<Point ID="38">
+								<Value>67.20274</Value>
+							</Point>
+							<Point ID="39">
+								<Value>64.89483</Value>
+							</Point>
+							<Point ID="40">
+								<Value>68.88827</Value>
+							</Point>
+							<Point ID="41">
+								<Value>70.6555</Value>
+							</Point>
+							<Point ID="42">
+								<Value>47.40615</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-16.11797</Value>
+							</Point>
+							<Point ID="47">
+								<Value>5.012899</Value>
+							</Point>
+							<Point ID="48">
+								<Value>337.3343</Value>
+							</Point>
+							<Point ID="9">
+								<Value>7.312097</Value>
+							</Point>
+							<Point ID="10">
+								<Value>1.578177</Value>
+							</Point>
+							<Point ID="11">
+								<Value>1.906784</Value>
+							</Point>
+							<Point ID="12">
+								<Value>7.70592</Value>
+							</Point>
+							<Point ID="43">
+								<Value>4.625745</Value>
+							</Point>
+							<Point ID="13">
+								<Value>1.153959</Value>
+							</Point>
+							<Point ID="14">
+								<Value>0.7483488</Value>
+							</Point>
+							<Point ID="15">
+								<Value>-4.975215</Value>
+							</Point>
+							<Point ID="16">
+								<Value>-4.654071</Value>
+							</Point>
+							<Point ID="44">
+								<Value>-1.931744</Value>
+							</Point>
+							<Point ID="17">
+								<Value>-0.6178712</Value>
+							</Point>
+							<Point ID="18">
+								<Value>1.376432</Value>
+							</Point>
+							<Point ID="19">
+								<Value>-0.6610376</Value>
+							</Point>
+							<Point ID="20">
+								<Value>1.152035</Value>
+							</Point>
+							<Point ID="45">
+								<Value>0.3123894</Value>
+							</Point>
+							<Point ID="21">
+								<Value>-1.521621</Value>
+							</Point>
+							<Point ID="22">
+								<Value>-1.846174</Value>
+							</Point>
+							<Point ID="23">
+								<Value>2.464499</Value>
+							</Point>
+							<Point ID="24">
+								<Value>-0.6629711</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-15.74347</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-15.143</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-17.55069</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-16.0347</Value>
+							</Point>
+							<Point ID="29">
+								<Value>28.69914</Value>
+							</Point>
+							<Point ID="30">
+								<Value>26.98961</Value>
+							</Point>
+							<Point ID="31">
+								<Value>32.55864</Value>
+							</Point>
+							<Point ID="32">
+								<Value>27.61077</Value>
+							</Point>
+							<Point ID="33">
+								<Value>3.452024</Value>
+							</Point>
+						</Cell>
+						<Cell Index="7">
+							<Point ID="50">
+								<Value>192</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>5.727355</Value>
+							</Point>
+							<Point ID="3">
+								<Value>148.4298</Value>
+							</Point>
+							<Point ID="4">
+								<Value>-4.879702</Value>
+							</Point>
+							<Point ID="5">
+								<Value>2.998516</Value>
+							</Point>
+							<Point ID="6">
+								<Value>0.6273153</Value>
+							</Point>
+							<Point ID="7">
+								<Value>48.92756</Value>
+							</Point>
+							<Point ID="38">
+								<Value>64.26083</Value>
+							</Point>
+							<Point ID="39">
+								<Value>65.41734</Value>
+							</Point>
+							<Point ID="40">
+								<Value>67.80598</Value>
+							</Point>
+							<Point ID="41">
+								<Value>66.73359</Value>
+							</Point>
+							<Point ID="42">
+								<Value>48.92756</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-15.10021</Value>
+							</Point>
+							<Point ID="47">
+								<Value>5.727355</Value>
+							</Point>
+							<Point ID="48">
+								<Value>148.4298</Value>
+							</Point>
+							<Point ID="9">
+								<Value>-2.153461</Value>
+							</Point>
+							<Point ID="10">
+								<Value>-8.271459</Value>
+							</Point>
+							<Point ID="11">
+								<Value>-7.643868</Value>
+							</Point>
+							<Point ID="12">
+								<Value>-1.450026</Value>
+							</Point>
+							<Point ID="43">
+								<Value>-4.879702</Value>
+							</Point>
+							<Point ID="13">
+								<Value>6.428326</Value>
+							</Point>
+							<Point ID="14">
+								<Value>5.724547</Value>
+							</Point>
+							<Point ID="15">
+								<Value>-0.395093</Value>
+							</Point>
+							<Point ID="16">
+								<Value>0.2362829</Value>
+							</Point>
+							<Point ID="44">
+								<Value>2.998516</Value>
+							</Point>
+							<Point ID="17">
+								<Value>-0.3835537</Value>
+							</Point>
+							<Point ID="18">
+								<Value>1.759712</Value>
+							</Point>
+							<Point ID="19">
+								<Value>-0.4031079</Value>
+							</Point>
+							<Point ID="20">
+								<Value>1.536212</Value>
+							</Point>
+							<Point ID="45">
+								<Value>0.6273153</Value>
+							</Point>
+							<Point ID="21">
+								<Value>2.876697</Value>
+							</Point>
+							<Point ID="22">
+								<Value>-1.094277</Value>
+							</Point>
+							<Point ID="23">
+								<Value>-1.898865</Value>
+							</Point>
+							<Point ID="24">
+								<Value>-1.629202</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-15.20252</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-13.95734</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-16.12419</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-15.11681</Value>
+							</Point>
+							<Point ID="29">
+								<Value>29.7392</Value>
+							</Point>
+							<Point ID="30">
+								<Value>27.25452</Value>
+							</Point>
+							<Point ID="31">
+								<Value>28.5705</Value>
+							</Point>
+							<Point ID="32">
+								<Value>29.28722</Value>
+							</Point>
+							<Point ID="33">
+								<Value>3.701311</Value>
+							</Point>
+						</Cell>
+						<Cell Index="8">
+							<Point ID="50">
+								<Value>192</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>4.521743</Value>
+							</Point>
+							<Point ID="3">
+								<Value>196.1957</Value>
+							</Point>
+							<Point ID="4">
+								<Value>-4.342295</Value>
+							</Point>
+							<Point ID="5">
+								<Value>-1.261203</Value>
+							</Point>
+							<Point ID="6">
+								<Value>2.28844</Value>
+							</Point>
+							<Point ID="7">
+								<Value>50.62533</Value>
+							</Point>
+							<Point ID="38">
+								<Value>72.40637</Value>
+							</Point>
+							<Point ID="39">
+								<Value>69.47129</Value>
+							</Point>
+							<Point ID="40">
+								<Value>70.47614</Value>
+							</Point>
+							<Point ID="41">
+								<Value>73.47881</Value>
+							</Point>
+							<Point ID="42">
+								<Value>50.62533</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-13.75725</Value>
+							</Point>
+							<Point ID="47">
+								<Value>4.521743</Value>
+							</Point>
+							<Point ID="48">
+								<Value>196.1957</Value>
+							</Point>
+							<Point ID="9">
+								<Value>-2.607967</Value>
+							</Point>
+							<Point ID="10">
+								<Value>-6.312458</Value>
+							</Point>
+							<Point ID="11">
+								<Value>-6.102942</Value>
+							</Point>
+							<Point ID="12">
+								<Value>-2.345813</Value>
+							</Point>
+							<Point ID="43">
+								<Value>-4.342295</Value>
+							</Point>
+							<Point ID="13">
+								<Value>0.7392443</Value>
+							</Point>
+							<Point ID="14">
+								<Value>0.4686468</Value>
+							</Point>
+							<Point ID="15">
+								<Value>-3.228905</Value>
+							</Point>
+							<Point ID="16">
+								<Value>-3.023793</Value>
+							</Point>
+							<Point ID="44">
+								<Value>-1.261203</Value>
+							</Point>
+							<Point ID="17">
+								<Value>1.68912</Value>
+							</Point>
+							<Point ID="18">
+								<Value>2.992445</Value>
+							</Point>
+							<Point ID="19">
+								<Value>1.656493</Value>
+							</Point>
+							<Point ID="20">
+								<Value>2.815699</Value>
+							</Point>
+							<Point ID="45">
+								<Value>2.28844</Value>
+							</Point>
+							<Point ID="21">
+								<Value>-0.3803294</Value>
+							</Point>
+							<Point ID="22">
+								<Value>-0.9520556</Value>
+							</Point>
+							<Point ID="23">
+								<Value>-2.561526</Value>
+							</Point>
+							<Point ID="24">
+								<Value>-4.222857</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-13.9385</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-13.8865</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-14.27398</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-12.93003</Value>
+							</Point>
+							<Point ID="29">
+								<Value>29.72502</Value>
+							</Point>
+							<Point ID="30">
+								<Value>30.41803</Value>
+							</Point>
+							<Point ID="31">
+								<Value>31.51087</Value>
+							</Point>
+							<Point ID="32">
+								<Value>30.21762</Value>
+							</Point>
+							<Point ID="33">
+								<Value>2.233057</Value>
+							</Point>
+						</Cell>
+						<Cell Index="9">
+							<Point ID="50">
+								<Value>192</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>4.271759</Value>
+							</Point>
+							<Point ID="3">
+								<Value>291.454</Value>
+							</Point>
+							<Point ID="4">
+								<Value>1.562413</Value>
+							</Point>
+							<Point ID="5">
+								<Value>-3.975775</Value>
+							</Point>
+							<Point ID="6">
+								<Value>1.836127</Value>
+							</Point>
+							<Point ID="7">
+								<Value>48.13427</Value>
+							</Point>
+							<Point ID="38">
+								<Value>72.71379</Value>
+							</Point>
+							<Point ID="39">
+								<Value>68.29279</Value>
+							</Point>
+							<Point ID="40">
+								<Value>61.88279</Value>
+							</Point>
+							<Point ID="41">
+								<Value>66.65939</Value>
+							</Point>
+							<Point ID="42">
+								<Value>48.13427</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-13.13306</Value>
+							</Point>
+							<Point ID="47">
+								<Value>4.271759</Value>
+							</Point>
+							<Point ID="48">
+								<Value>291.454</Value>
+							</Point>
+							<Point ID="9">
+								<Value>2.050356</Value>
+							</Point>
+							<Point ID="10">
+								<Value>0.7181735</Value>
+							</Point>
+							<Point ID="11">
+								<Value>1.057316</Value>
+							</Point>
+							<Point ID="12">
+								<Value>2.423808</Value>
+							</Point>
+							<Point ID="43">
+								<Value>1.562413</Value>
+							</Point>
+							<Point ID="13">
+								<Value>-3.112961</Value>
+							</Point>
+							<Point ID="14">
+								<Value>-3.48963</Value>
+							</Point>
+							<Point ID="15">
+								<Value>-4.819772</Value>
+							</Point>
+							<Point ID="16">
+								<Value>-4.480737</Value>
+							</Point>
+							<Point ID="44">
+								<Value>-3.975775</Value>
+							</Point>
+							<Point ID="17">
+								<Value>1.621442</Value>
+							</Point>
+							<Point ID="18">
+								<Value>2.116716</Value>
+							</Point>
+							<Point ID="19">
+								<Value>1.596562</Value>
+							</Point>
+							<Point ID="20">
+								<Value>2.009788</Value>
+							</Point>
+							<Point ID="45">
+								<Value>1.836127</Value>
+							</Point>
+							<Point ID="21">
+								<Value>-3.136448</Value>
+							</Point>
+							<Point ID="22">
+								<Value>-1.065869</Value>
+							</Point>
+							<Point ID="23">
+								<Value>0.03173096</Value>
+							</Point>
+							<Point ID="24">
+								<Value>-2.863178</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-12.9062</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-14.09896</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-13.34454</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-12.18255</Value>
+							</Point>
+							<Point ID="29">
+								<Value>30.45498</Value>
+							</Point>
+							<Point ID="30">
+								<Value>31.79952</Value>
+							</Point>
+							<Point ID="31">
+								<Value>26.32732</Value>
+							</Point>
+							<Point ID="32">
+								<Value>23.99313</Value>
+							</Point>
+							<Point ID="33">
+								<Value>0.824331</Value>
+							</Point>
+						</Cell>
+						<Cell Index="10">
+							<Point ID="50">
+								<Value>128</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>1.410844</Value>
+							</Point>
+							<Point ID="3">
+								<Value>174.7207</Value>
+							</Point>
+							<Point ID="4">
+								<Value>-1.404859</Value>
+							</Point>
+							<Point ID="5">
+								<Value>0.1298127</Value>
+							</Point>
+							<Point ID="6">
+								<Value>1.411929</Value>
+							</Point>
+							<Point ID="7">
+								<Value>44.08084</Value>
+							</Point>
+							<Point ID="38">
+								<Value>66.0611</Value>
+							</Point>
+							<Point ID="39">
+								<Value>65.79208</Value>
+							</Point>
+							<Point ID="40">
+								<Value>61.337</Value>
+							</Point>
+							<Point ID="41">
+								<Value>61.79205</Value>
+							</Point>
+							<Point ID="42">
+								<Value>44.08084</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-12.31508</Value>
+							</Point>
+							<Point ID="47">
+								<Value>1.410844</Value>
+							</Point>
+							<Point ID="48">
+								<Value>174.7207</Value>
+							</Point>
+							<Point ID="9">
+								<Value>2.986926</Value>
+							</Point>
+							<Point ID="10">
+								<Value>-6.875674</Value>
+							</Point>
+							<Point ID="11">
+								<Value>-5.852551</Value>
+							</Point>
+							<Point ID="12">
+								<Value>4.121864</Value>
+							</Point>
+							<Point ID="43">
+								<Value>-1.404859</Value>
+							</Point>
+							<Point ID="13">
+								<Value>5.662067</Value>
+							</Point>
+							<Point ID="14">
+								<Value>4.515184</Value>
+							</Point>
+							<Point ID="15">
+								<Value>-5.337824</Value>
+							</Point>
+							<Point ID="16">
+								<Value>-4.320177</Value>
+							</Point>
+							<Point ID="44">
+								<Value>0.1298127</Value>
+							</Point>
+							<Point ID="17">
+								<Value>-0.1994952</Value>
+							</Point>
+							<Point ID="18">
+								<Value>3.236752</Value>
+							</Point>
+							<Point ID="19">
+								<Value>-0.2657204</Value>
+							</Point>
+							<Point ID="20">
+								<Value>2.876178</Value>
+							</Point>
+							<Point ID="45">
+								<Value>1.411929</Value>
+							</Point>
+							<Point ID="21">
+								<Value>0.7201514</Value>
+							</Point>
+							<Point ID="22">
+								<Value>-2.411201</Value>
+							</Point>
+							<Point ID="23">
+								<Value>-0.2340624</Value>
+							</Point>
+							<Point ID="24">
+								<Value>-3.06655</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-12.9641</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-11.90593</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-12.84791</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-11.54239</Value>
+							</Point>
+							<Point ID="29">
+								<Value>27.97338</Value>
+							</Point>
+							<Point ID="30">
+								<Value>29.17945</Value>
+							</Point>
+							<Point ID="31">
+								<Value>24.90997</Value>
+							</Point>
+							<Point ID="32">
+								<Value>25.56724</Value>
+							</Point>
+							<Point ID="33">
+								<Value>5.96384</Value>
+							</Point>
+						</Cell>
+						<Cell Index="11">
+							<Point ID="50">
+								<Value>192</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>3.996356</Value>
+							</Point>
+							<Point ID="3">
+								<Value>215.9962</Value>
+							</Point>
+							<Point ID="4">
+								<Value>-3.233277</Value>
+							</Point>
+							<Point ID="5">
+								<Value>-2.348784</Value>
+							</Point>
+							<Point ID="6">
+								<Value>0.7962577</Value>
+							</Point>
+							<Point ID="7">
+								<Value>48.62985</Value>
+							</Point>
+							<Point ID="38">
+								<Value>68.96784</Value>
+							</Point>
+							<Point ID="39">
+								<Value>65.32174</Value>
+							</Point>
+							<Point ID="40">
+								<Value>68.29549</Value>
+							</Point>
+							<Point ID="41">
+								<Value>71.77759</Value>
+							</Point>
+							<Point ID="42">
+								<Value>48.62985</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-11.35801</Value>
+							</Point>
+							<Point ID="47">
+								<Value>3.996356</Value>
+							</Point>
+							<Point ID="48">
+								<Value>215.9962</Value>
+							</Point>
+							<Point ID="9">
+								<Value>-1.707522</Value>
+							</Point>
+							<Point ID="10">
+								<Value>-5.021269</Value>
+							</Point>
+							<Point ID="11">
+								<Value>-4.789378</Value>
+							</Point>
+							<Point ID="12">
+								<Value>-1.414936</Value>
+							</Point>
+							<Point ID="43">
+								<Value>-3.233277</Value>
+							</Point>
+							<Point ID="13">
+								<Value>-0.5321522</Value>
+							</Point>
+							<Point ID="14">
+								<Value>-0.8211855</Value>
+							</Point>
+							<Point ID="15">
+								<Value>-4.140633</Value>
+							</Point>
+							<Point ID="16">
+								<Value>-3.901162</Value>
+							</Point>
+							<Point ID="44">
+								<Value>-2.348784</Value>
+							</Point>
+							<Point ID="17">
+								<Value>0.2424823</Value>
+							</Point>
+							<Point ID="18">
+								<Value>1.433187</Value>
+							</Point>
+							<Point ID="19">
+								<Value>0.2447892</Value>
+							</Point>
+							<Point ID="20">
+								<Value>1.264573</Value>
+							</Point>
+							<Point ID="45">
+								<Value>0.7962577</Value>
+							</Point>
+							<Point ID="21">
+								<Value>0.2674707</Value>
+							</Point>
+							<Point ID="22">
+								<Value>0.4138575</Value>
+							</Point>
+							<Point ID="23">
+								<Value>-0.6802392</Value>
+							</Point>
+							<Point ID="24">
+								<Value>-2.831221</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-12.05467</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-10.86814</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-11.66522</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-10.84401</Value>
+							</Point>
+							<Point ID="29">
+								<Value>29.48226</Value>
+							</Point>
+							<Point ID="30">
+								<Value>26.81972</Value>
+							</Point>
+							<Point ID="31">
+								<Value>33.53049</Value>
+							</Point>
+							<Point ID="32">
+								<Value>24.51019</Value>
+							</Point>
+							<Point ID="33">
+								<Value>2.004595</Value>
+							</Point>
+						</Cell>
+						<Cell Index="12">
+							<Point ID="50">
+								<Value>192</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>6.623607</Value>
+							</Point>
+							<Point ID="3">
+								<Value>202.9073</Value>
+							</Point>
+							<Point ID="4">
+								<Value>-6.101241</Value>
+							</Point>
+							<Point ID="5">
+								<Value>-2.578183</Value>
+							</Point>
+							<Point ID="6">
+								<Value>-0.7491999</Value>
+							</Point>
+							<Point ID="7">
+								<Value>45.3768</Value>
+							</Point>
+							<Point ID="38">
+								<Value>64.7644</Value>
+							</Point>
+							<Point ID="39">
+								<Value>65.20962</Value>
+							</Point>
+							<Point ID="40">
+								<Value>67.85941</Value>
+							</Point>
+							<Point ID="41">
+								<Value>67.51007</Value>
+							</Point>
+							<Point ID="42">
+								<Value>45.3768</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-10.65541</Value>
+							</Point>
+							<Point ID="47">
+								<Value>6.623607</Value>
+							</Point>
+							<Point ID="48">
+								<Value>202.9073</Value>
+							</Point>
+							<Point ID="9">
+								<Value>-7.62119</Value>
+							</Point>
+							<Point ID="10">
+								<Value>-4.316891</Value>
+							</Point>
+							<Point ID="11">
+								<Value>-4.562777</Value>
+							</Point>
+							<Point ID="12">
+								<Value>-7.904107</Value>
+							</Point>
+							<Point ID="43">
+								<Value>-6.101241</Value>
+							</Point>
+							<Point ID="13">
+								<Value>-4.383988</Value>
+							</Point>
+							<Point ID="14">
+								<Value>-4.09481</Value>
+							</Point>
+							<Point ID="15">
+								<Value>-0.7959108</Value>
+							</Point>
+							<Point ID="16">
+								<Value>-1.038029</Value>
+							</Point>
+							<Point ID="44">
+								<Value>-2.578183</Value>
+							</Point>
+							<Point ID="17">
+								<Value>-0.212057</Value>
+							</Point>
+							<Point ID="18">
+								<Value>-1.361496</Value>
+							</Point>
+							<Point ID="19">
+								<Value>-0.1874111</Value>
+							</Point>
+							<Point ID="20">
+								<Value>-1.235835</Value>
+							</Point>
+							<Point ID="45">
+								<Value>-0.7491999</Value>
+							</Point>
+							<Point ID="21">
+								<Value>1.597507</Value>
+							</Point>
+							<Point ID="22">
+								<Value>3.701677</Value>
+							</Point>
+							<Point ID="23">
+								<Value>-1.10428</Value>
+							</Point>
+							<Point ID="24">
+								<Value>-1.21573</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-10.84082</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-10.83816</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-11.03365</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-9.909025</Value>
+							</Point>
+							<Point ID="29">
+								<Value>28.32444</Value>
+							</Point>
+							<Point ID="30">
+								<Value>25.74136</Value>
+							</Point>
+							<Point ID="31">
+								<Value>30.43473</Value>
+							</Point>
+							<Point ID="32">
+								<Value>28.26798</Value>
+							</Point>
+							<Point ID="33">
+								<Value>-1.99272</Value>
+							</Point>
+						</Cell>
+						<Cell Index="13">
+							<Point ID="50">
+								<Value>128</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>3.003858</Value>
+							</Point>
+							<Point ID="3">
+								<Value>164.4921</Value>
+							</Point>
+							<Point ID="4">
+								<Value>-2.894499</Value>
+							</Point>
+							<Point ID="5">
+								<Value>0.8031445</Value>
+							</Point>
+							<Point ID="6">
+								<Value>1.471223</Value>
+							</Point>
+							<Point ID="7">
+								<Value>43.75764</Value>
+							</Point>
+							<Point ID="38">
+								<Value>59.82166</Value>
+							</Point>
+							<Point ID="39">
+								<Value>61.8116</Value>
+							</Point>
+							<Point ID="40">
+								<Value>65.31786</Value>
+							</Point>
+							<Point ID="41">
+								<Value>62.90134</Value>
+							</Point>
+							<Point ID="42">
+								<Value>43.75764</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-10.08093</Value>
+							</Point>
+							<Point ID="47">
+								<Value>3.003858</Value>
+							</Point>
+							<Point ID="48">
+								<Value>164.4921</Value>
+							</Point>
+							<Point ID="9">
+								<Value>-5.001895</Value>
+							</Point>
+							<Point ID="10">
+								<Value>-0.1155659</Value>
+							</Point>
+							<Point ID="11">
+								<Value>-0.7506271</Value>
+							</Point>
+							<Point ID="12">
+								<Value>-5.709905</Value>
+							</Point>
+							<Point ID="43">
+								<Value>-2.894499</Value>
+							</Point>
+							<Point ID="13">
+								<Value>-2.012887</Value>
+							</Point>
+							<Point ID="14">
+								<Value>-1.303367</Value>
+							</Point>
+							<Point ID="15">
+								<Value>3.583593</Value>
+							</Point>
+							<Point ID="16">
+								<Value>2.945242</Value>
+							</Point>
+							<Point ID="44">
+								<Value>0.8031445</Value>
+							</Point>
+							<Point ID="17">
+								<Value>2.27681</Value>
+							</Point>
+							<Point ID="18">
+								<Value>0.5443118</Value>
+							</Point>
+							<Point ID="19">
+								<Value>2.302857</Value>
+							</Point>
+							<Point ID="20">
+								<Value>0.7609116</Value>
+							</Point>
+							<Point ID="45">
+								<Value>1.471223</Value>
+							</Point>
+							<Point ID="21">
+								<Value>-0.8060815</Value>
+							</Point>
+							<Point ID="22">
+								<Value>-0.01037342</Value>
+							</Point>
+							<Point ID="23">
+								<Value>-3.19644</Value>
+							</Point>
+							<Point ID="24">
+								<Value>-1.023088</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-10.56781</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-9.460122</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-10.41863</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-9.877138</Value>
+							</Point>
+							<Point ID="29">
+								<Value>28.43271</Value>
+							</Point>
+							<Point ID="30">
+								<Value>22.32235</Value>
+							</Point>
+							<Point ID="31">
+								<Value>28.3583</Value>
+							</Point>
+							<Point ID="32">
+								<Value>29.59435</Value>
+							</Point>
+							<Point ID="33">
+								<Value>-2.96906</Value>
+							</Point>
+						</Cell>
+						<Cell Index="14">
+							<Point ID="50">
+								<Value>192</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>3.803715</Value>
+							</Point>
+							<Point ID="3">
+								<Value>192.9686</Value>
+							</Point>
+							<Point ID="4">
+								<Value>-3.706694</Value>
+							</Point>
+							<Point ID="5">
+								<Value>-0.8536202</Value>
+							</Point>
+							<Point ID="6">
+								<Value>-0.6101546</Value>
+							</Point>
+							<Point ID="7">
+								<Value>45.56192</Value>
+							</Point>
+							<Point ID="38">
+								<Value>63.0527</Value>
+							</Point>
+							<Point ID="39">
+								<Value>64.48973</Value>
+							</Point>
+							<Point ID="40">
+								<Value>62.00386</Value>
+							</Point>
+							<Point ID="41">
+								<Value>61.0213</Value>
+							</Point>
+							<Point ID="42">
+								<Value>45.56192</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-9.314672</Value>
+							</Point>
+							<Point ID="47">
+								<Value>3.803715</Value>
+							</Point>
+							<Point ID="48">
+								<Value>192.9686</Value>
+							</Point>
+							<Point ID="9">
+								<Value>-5.953131</Value>
+							</Point>
+							<Point ID="10">
+								<Value>-0.9611412</Value>
+							</Point>
+							<Point ID="11">
+								<Value>-1.426455</Value>
+							</Point>
+							<Point ID="12">
+								<Value>-6.486052</Value>
+							</Point>
+							<Point ID="43">
+								<Value>-3.706694</Value>
+							</Point>
+							<Point ID="13">
+								<Value>-3.63915</Value>
+							</Point>
+							<Point ID="14">
+								<Value>-3.092948</Value>
+							</Point>
+							<Point ID="15">
+								<Value>1.887511</Value>
+							</Point>
+							<Point ID="16">
+								<Value>1.430107</Value>
+							</Point>
+							<Point ID="44">
+								<Value>-0.8536202</Value>
+							</Point>
+							<Point ID="17">
+								<Value>0.1947364</Value>
+							</Point>
+							<Point ID="18">
+								<Value>-1.55942</Value>
+							</Point>
+							<Point ID="19">
+								<Value>0.2504491</Value>
+							</Point>
+							<Point ID="20">
+								<Value>-1.326384</Value>
+							</Point>
+							<Point ID="45">
+								<Value>-0.6101546</Value>
+							</Point>
+							<Point ID="21">
+								<Value>0.8248193</Value>
+							</Point>
+							<Point ID="22">
+								<Value>2.608183</Value>
+							</Point>
+							<Point ID="23">
+								<Value>-1.143396</Value>
+							</Point>
+							<Point ID="24">
+								<Value>0.09379885</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-10.38202</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-9.5164</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-8.230252</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-9.130012</Value>
+							</Point>
+							<Point ID="29">
+								<Value>28.89156</Value>
+							</Point>
+							<Point ID="30">
+								<Value>29.75622</Value>
+							</Point>
+							<Point ID="31">
+								<Value>25.55537</Value>
+							</Point>
+							<Point ID="32">
+								<Value>28.32315</Value>
+							</Point>
+							<Point ID="33">
+								<Value>-3.020559</Value>
+							</Point>
+						</Cell>
+						<Cell Index="15">
+							<Point ID="50">
+								<Value>192</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>8.741577</Value>
+							</Point>
+							<Point ID="3">
+								<Value>123.2888</Value>
+							</Point>
+							<Point ID="4">
+								<Value>-4.797904</Value>
+							</Point>
+							<Point ID="5">
+								<Value>7.307209</Value>
+							</Point>
+							<Point ID="6">
+								<Value>-0.1968871</Value>
+							</Point>
+							<Point ID="7">
+								<Value>50.63896</Value>
+							</Point>
+							<Point ID="38">
+								<Value>74.58533</Value>
+							</Point>
+							<Point ID="39">
+								<Value>72.69559</Value>
+							</Point>
+							<Point ID="40">
+								<Value>66.11345</Value>
+							</Point>
+							<Point ID="41">
+								<Value>68.1475</Value>
+							</Point>
+							<Point ID="42">
+								<Value>50.63896</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-9.092976</Value>
+							</Point>
+							<Point ID="47">
+								<Value>8.741577</Value>
+							</Point>
+							<Point ID="48">
+								<Value>123.2888</Value>
+							</Point>
+							<Point ID="9">
+								<Value>-0.282013</Value>
+							</Point>
+							<Point ID="10">
+								<Value>-10.52343</Value>
+							</Point>
+							<Point ID="11">
+								<Value>-9.380588</Value>
+							</Point>
+							<Point ID="12">
+								<Value>0.9944214</Value>
+							</Point>
+							<Point ID="43">
+								<Value>-4.797904</Value>
+							</Point>
+							<Point ID="13">
+								<Value>13.10247</Value>
+							</Point>
+							<Point ID="14">
+								<Value>11.8196</Value>
+							</Point>
+							<Point ID="15">
+								<Value>1.581172</Value>
+							</Point>
+							<Point ID="16">
+								<Value>2.7256</Value>
+							</Point>
+							<Point ID="44">
+								<Value>7.307209</Value>
+							</Point>
+							<Point ID="17">
+								<Value>-1.879966</Value>
+							</Point>
+							<Point ID="18">
+								<Value>1.718365</Value>
+							</Point>
+							<Point ID="19">
+								<Value>-1.935444</Value>
+							</Point>
+							<Point ID="20">
+								<Value>1.309495</Value>
+							</Point>
+							<Point ID="45">
+								<Value>-0.1968871</Value>
+							</Point>
+							<Point ID="21">
+								<Value>5.456684</Value>
+							</Point>
+							<Point ID="22">
+								<Value>-2.304328</Value>
+							</Point>
+							<Point ID="23">
+								<Value>-1.562234</Value>
+							</Point>
+							<Point ID="24">
+								<Value>-0.005778818</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-10.0285</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-8.790105</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-9.320746</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-8.23255</Value>
+							</Point>
+							<Point ID="29">
+								<Value>27.94725</Value>
+							</Point>
+							<Point ID="30">
+								<Value>32.9678</Value>
+							</Point>
+							<Point ID="31">
+								<Value>26.92299</Value>
+							</Point>
+							<Point ID="32">
+								<Value>30.84367</Value>
+							</Point>
+							<Point ID="33">
+								<Value>6.204558</Value>
+							</Point>
+						</Cell>
+						<Cell Index="16">
+							<Point ID="50">
+								<Value>192</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>4.006359</Value>
+							</Point>
+							<Point ID="3">
+								<Value>190.6278</Value>
+							</Point>
+							<Point ID="4">
+								<Value>-3.937634</Value>
+							</Point>
+							<Point ID="5">
+								<Value>-0.738884</Value>
+							</Point>
+							<Point ID="6">
+								<Value>0.05187865</Value>
+							</Point>
+							<Point ID="7">
+								<Value>49.0762</Value>
+							</Point>
+							<Point ID="38">
+								<Value>70.87233</Value>
+							</Point>
+							<Point ID="39">
+								<Value>70.76863</Value>
+							</Point>
+							<Point ID="40">
+								<Value>69.07512</Value>
+							</Point>
+							<Point ID="41">
+								<Value>68.91243</Value>
+							</Point>
+							<Point ID="42">
+								<Value>49.0762</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-8.320134</Value>
+							</Point>
+							<Point ID="47">
+								<Value>4.006359</Value>
+							</Point>
+							<Point ID="48">
+								<Value>190.6278</Value>
+							</Point>
+							<Point ID="9">
+								<Value>-0.6011589</Value>
+							</Point>
+							<Point ID="10">
+								<Value>-7.947598</Value>
+							</Point>
+							<Point ID="11">
+								<Value>-7.320309</Value>
+							</Point>
+							<Point ID="12">
+								<Value>0.1185276</Value>
+							</Point>
+							<Point ID="43">
+								<Value>-3.937634</Value>
+							</Point>
+							<Point ID="13">
+								<Value>3.319934</Value>
+							</Point>
+							<Point ID="14">
+								<Value>2.594532</Value>
+							</Point>
+							<Point ID="15">
+								<Value>-4.748571</Value>
+							</Point>
+							<Point ID="16">
+								<Value>-4.12143</Value>
+							</Point>
+							<Point ID="44">
+								<Value>-0.738884</Value>
+							</Point>
+							<Point ID="17">
+								<Value>-1.15416</Value>
+							</Point>
+							<Point ID="18">
+								<Value>1.419371</Value>
+							</Point>
+							<Point ID="19">
+								<Value>-1.189381</Value>
+							</Point>
+							<Point ID="20">
+								<Value>1.131683</Value>
+							</Point>
+							<Point ID="45">
+								<Value>0.05187865</Value>
+							</Point>
+							<Point ID="21">
+								<Value>2.254006</Value>
+							</Point>
+							<Point ID="22">
+								<Value>0.2367308</Value>
+							</Point>
+							<Point ID="23">
+								<Value>0.01108149</Value>
+							</Point>
+							<Point ID="24">
+								<Value>-2.409382</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-8.15094</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-7.664073</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-9.159931</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-8.305592</Value>
+							</Point>
+							<Point ID="29">
+								<Value>30.15044</Value>
+							</Point>
+							<Point ID="30">
+								<Value>29.38878</Value>
+							</Point>
+							<Point ID="31">
+								<Value>30.69656</Value>
+							</Point>
+							<Point ID="32">
+								<Value>27.78822</Value>
+							</Point>
+							<Point ID="33">
+								<Value>4.437739</Value>
+							</Point>
+						</Cell>
+						<Cell Index="17">
+							<Point ID="50">
+								<Value>192</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>9.784766</Value>
+							</Point>
+							<Point ID="3">
+								<Value>29.37214</Value>
+							</Point>
+							<Point ID="4">
+								<Value>8.526958</Value>
+							</Point>
+							<Point ID="5">
+								<Value>4.799232</Value>
+							</Point>
+							<Point ID="6">
+								<Value>0.8981678</Value>
+							</Point>
+							<Point ID="7">
+								<Value>47.87826</Value>
+							</Point>
+							<Point ID="38">
+								<Value>68.09462</Value>
+							</Point>
+							<Point ID="39">
+								<Value>67.0907</Value>
+							</Point>
+							<Point ID="40">
+								<Value>70.06046</Value>
+							</Point>
+							<Point ID="41">
+								<Value>71.59699</Value>
+							</Point>
+							<Point ID="42">
+								<Value>47.87826</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-8.504712</Value>
+							</Point>
+							<Point ID="47">
+								<Value>9.784766</Value>
+							</Point>
+							<Point ID="48">
+								<Value>29.37214</Value>
+							</Point>
+							<Point ID="9">
+								<Value>6.282242</Value>
+							</Point>
+							<Point ID="10">
+								<Value>11.36239</Value>
+							</Point>
+							<Point ID="11">
+								<Value>10.80792</Value>
+							</Point>
+							<Point ID="12">
+								<Value>5.655269</Value>
+							</Point>
+							<Point ID="43">
+								<Value>8.526958</Value>
+							</Point>
+							<Point ID="13">
+								<Value>1.928298</Value>
+							</Point>
+							<Point ID="14">
+								<Value>2.553811</Value>
+							</Point>
+							<Point ID="15">
+								<Value>7.637485</Value>
+							</Point>
+							<Point ID="16">
+								<Value>7.077341</Value>
+							</Point>
+							<Point ID="44">
+								<Value>4.799232</Value>
+							</Point>
+							<Point ID="17">
+								<Value>1.740142</Value>
+							</Point>
+							<Point ID="18">
+								<Value>-0.05436286</Value>
+							</Point>
+							<Point ID="19">
+								<Value>1.753233</Value>
+							</Point>
+							<Point ID="20">
+								<Value>0.1536597</Value>
+							</Point>
+							<Point ID="45">
+								<Value>0.8981678</Value>
+							</Point>
+							<Point ID="21">
+								<Value>-3.122583</Value>
+							</Point>
+							<Point ID="22">
+								<Value>-3.950781</Value>
+							</Point>
+							<Point ID="23">
+								<Value>-0.1778126</Value>
+							</Point>
+							<Point ID="24">
+								<Value>3.7277</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-9.092951</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-8.767914</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-8.074774</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-8.08321</Value>
+							</Point>
+							<Point ID="29">
+								<Value>30.33172</Value>
+							</Point>
+							<Point ID="30">
+								<Value>26.28058</Value>
+							</Point>
+							<Point ID="31">
+								<Value>32.57309</Value>
+							</Point>
+							<Point ID="32">
+								<Value>30.15842</Value>
+							</Point>
+							<Point ID="33">
+								<Value>-3.077314</Value>
+							</Point>
+						</Cell>
+						<Cell Index="18">
+							<Point ID="50">
+								<Value>192</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>5.096313</Value>
+							</Point>
+							<Point ID="3">
+								<Value>98.97749</Value>
+							</Point>
+							<Point ID="4">
+								<Value>-0.7952606</Value>
+							</Point>
+							<Point ID="5">
+								<Value>5.033882</Value>
+							</Point>
+							<Point ID="6">
+								<Value>0.0600689</Value>
+							</Point>
+							<Point ID="7">
+								<Value>51.01027</Value>
+							</Point>
+							<Point ID="38">
+								<Value>68.84653</Value>
+							</Point>
+							<Point ID="39">
+								<Value>69.68762</Value>
+							</Point>
+							<Point ID="40">
+								<Value>70.64023</Value>
+							</Point>
+							<Point ID="41">
+								<Value>70.32771</Value>
+							</Point>
+							<Point ID="42">
+								<Value>51.01027</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-6.549925</Value>
+							</Point>
+							<Point ID="47">
+								<Value>5.096313</Value>
+							</Point>
+							<Point ID="48">
+								<Value>98.97749</Value>
+							</Point>
+							<Point ID="9">
+								<Value>-6.545094</Value>
+							</Point>
+							<Point ID="10">
+								<Value>6.290432</Value>
+							</Point>
+							<Point ID="11">
+								<Value>5.040372</Value>
+							</Point>
+							<Point ID="12">
+								<Value>-7.966748</Value>
+							</Point>
+							<Point ID="43">
+								<Value>-0.7952606</Value>
+							</Point>
+							<Point ID="13">
+								<Value>-2.139694</Value>
+							</Point>
+							<Point ID="14">
+								<Value>-0.7133374</Value>
+							</Point>
+							<Point ID="15">
+								<Value>12.12211</Value>
+							</Point>
+							<Point ID="16">
+								<Value>10.86646</Value>
+							</Point>
+							<Point ID="44">
+								<Value>5.033882</Value>
+							</Point>
+							<Point ID="17">
+								<Value>2.176046</Value>
+							</Point>
+							<Point ID="18">
+								<Value>-2.34005</Value>
+							</Point>
+							<Point ID="19">
+								<Value>2.22752</Value>
+							</Point>
+							<Point ID="20">
+								<Value>-1.82324</Value>
+							</Point>
+							<Point ID="45">
+								<Value>0.0600689</Value>
+							</Point>
+							<Point ID="21">
+								<Value>-0.2844189</Value>
+							</Point>
+							<Point ID="22">
+								<Value>0.5296777</Value>
+							</Point>
+							<Point ID="23">
+								<Value>-3.488144</Value>
+							</Point>
+							<Point ID="24">
+								<Value>3.465115</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-6.757061</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-6.656415</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-6.786499</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-5.999724</Value>
+							</Point>
+							<Point ID="29">
+								<Value>27.43471</Value>
+							</Point>
+							<Point ID="30">
+								<Value>30.18704</Value>
+							</Point>
+							<Point ID="31">
+								<Value>31.58949</Value>
+							</Point>
+							<Point ID="32">
+								<Value>30.33042</Value>
+							</Point>
+							<Point ID="33">
+								<Value>-7.767356</Value>
+							</Point>
+						</Cell>
+						<Cell Index="19">
+							<Point ID="50">
+								<Value>192</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>1.749256</Value>
+							</Point>
+							<Point ID="3">
+								<Value>47.29182</Value>
+							</Point>
+							<Point ID="4">
+								<Value>1.186459</Value>
+							</Point>
+							<Point ID="5">
+								<Value>1.285384</Value>
+							</Point>
+							<Point ID="6">
+								<Value>-1.35297</Value>
+							</Point>
+							<Point ID="7">
+								<Value>52.37403</Value>
+							</Point>
+							<Point ID="38">
+								<Value>81.5291</Value>
+							</Point>
+							<Point ID="39">
+								<Value>75.24916</Value>
+							</Point>
+							<Point ID="40">
+								<Value>69.15904</Value>
+							</Point>
+							<Point ID="41">
+								<Value>75.52722</Value>
+							</Point>
+							<Point ID="42">
+								<Value>52.37403</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-5.914799</Value>
+							</Point>
+							<Point ID="47">
+								<Value>1.749256</Value>
+							</Point>
+							<Point ID="48">
+								<Value>47.29182</Value>
+							</Point>
+							<Point ID="9">
+								<Value>-3.161309</Value>
+							</Point>
+							<Point ID="10">
+								<Value>6.761892</Value>
+							</Point>
+							<Point ID="11">
+								<Value>5.59547</Value>
+							</Point>
+							<Point ID="12">
+								<Value>-4.450217</Value>
+							</Point>
+							<Point ID="43">
+								<Value>1.186459</Value>
+							</Point>
+							<Point ID="13">
+								<Value>-4.351925</Value>
+							</Point>
+							<Point ID="14">
+								<Value>-3.061467</Value>
+							</Point>
+							<Point ID="15">
+								<Value>6.863201</Value>
+							</Point>
+							<Point ID="16">
+								<Value>5.69173</Value>
+							</Point>
+							<Point ID="44">
+								<Value>1.285384</Value>
+							</Point>
+							<Point ID="17">
+								<Value>0.2854189</Value>
+							</Point>
+							<Point ID="18">
+								<Value>-3.193415</Value>
+							</Point>
+							<Point ID="19">
+								<Value>0.325076</Value>
+							</Point>
+							<Point ID="20">
+								<Value>-2.828959</Value>
+							</Point>
+							<Point ID="45">
+								<Value>-1.35297</Value>
+							</Point>
+							<Point ID="21">
+								<Value>-0.3100513</Value>
+							</Point>
+							<Point ID="22">
+								<Value>1.941558</Value>
+							</Point>
+							<Point ID="23">
+								<Value>-0.2330396</Value>
+							</Point>
+							<Point ID="24">
+								<Value>3.528806</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-5.738766</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-5.90234</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-6.321576</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-5.696514</Value>
+							</Point>
+							<Point ID="29">
+								<Value>28.61313</Value>
+							</Point>
+							<Point ID="30">
+								<Value>36.41412</Value>
+							</Point>
+							<Point ID="31">
+								<Value>30.67779</Value>
+							</Point>
+							<Point ID="32">
+								<Value>28.85673</Value>
+							</Point>
+							<Point ID="33">
+								<Value>-6.013454</Value>
+							</Point>
+						</Cell>
+					</Column>
+					<Column Index="3" Descr="Column 2" SurfaceReferred="true" ColumnStartCellCenter="1.5" CellSize="1" NumCells="6" TransducerDirection="Up" CellCenterSpacing="0.5">
+						<CellAttributes>
+							<Point ID="50" Descr="Cell State1" Type="VT_I2" RangeMin="-32768" RangeMax="32767" />
+							<Point ID="49" Descr="Cell State2" Type="VT_I2" RangeMin="-32768" RangeMax="32767" />
+							<Point ID="2" Descr="Horizontal Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="3" Descr="Direction" Type="VT_R4" Format="%.2f" Unit="Deg.M" RangeMin="0" RangeMax="360" />
+							<Point ID="4" Descr="North Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="5" Descr="East Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="6" Descr="Vertical Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="7" Descr="SP Stdev Horizontal" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="38" Descr="SP Stdev Beam123" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="39" Descr="SP Stdev Beam124" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="40" Descr="SP Stdev Beam134" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="41" Descr="SP Stdev Beam234" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="42" Descr="SP Stdev AutoBeam" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="8" Descr="Strength" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-80" RangeMax="0" />
+							<Point ID="47" Descr="Horizontal Speed AutoBeam" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="0" RangeMax="500" />
+							<Point ID="48" Descr="Direction AutoBeam" Type="VT_R4" Format="%.2f" Unit="Deg.M" RangeMin="0" RangeMax="360" />
+							<Point ID="9" Descr="North Beam123" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="10" Descr="North Beam124" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="11" Descr="North Beam134" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="12" Descr="North Beam234" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="43" Descr="North AutoBeam" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="13" Descr="East Beam123" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="14" Descr="East Beam124" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="15" Descr="East Beam134" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="16" Descr="East Beam234" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="44" Descr="East AutoBeam" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="17" Descr="Vertical Beam123" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="18" Descr="Vertical Beam124" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="19" Descr="Vertical Beam134" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="20" Descr="Vertical Beam234" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="45" Descr="Vertical AutoBeam" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="21" Descr="Beam1 Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="22" Descr="Beam2 Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="23" Descr="Beam3 Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="24" Descr="Beam4 Speed" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="25" Descr="Beam1 Strength" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-70" RangeMax="0" />
+							<Point ID="26" Descr="Beam2 Strength" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-70" RangeMax="0" />
+							<Point ID="27" Descr="Beam3 Strength" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-70" RangeMax="0" />
+							<Point ID="28" Descr="Beam4 Strength" Type="VT_R4" Format="%.2f" Unit="dB" RangeMin="-70" RangeMax="0" />
+							<Point ID="29" Descr="Beam1 Stdev" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="30" Descr="Beam2 Stdev" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="31" Descr="Beam3 Stdev" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="32" Descr="Beam4 Stdev" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+							<Point ID="33" Descr="Cross Difference" Type="VT_R4" Format="%.2f" Unit="cm/s" RangeMin="-500" RangeMax="500" />
+						</CellAttributes>
+						<Cell Index="0">
+							<Point ID="50">
+								<Value>8384</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<StatusCode>83</StatusCode>
+								<Value>17.74471</Value>
+							</Point>
+							<Point ID="3">
+								<StatusCode>83</StatusCode>
+								<Value>270.1988</Value>
+							</Point>
+							<Point ID="4">
+								<StatusCode>83</StatusCode>
+								<Value>0.06155391</Value>
+							</Point>
+							<Point ID="5">
+								<StatusCode>83</StatusCode>
+								<Value>-17.7446</Value>
+							</Point>
+							<Point ID="6">
+								<StatusCode>83</StatusCode>
+								<Value>1.054815</Value>
+							</Point>
+							<Point ID="7">
+								<StatusCode>83</StatusCode>
+								<Value>58.54716</Value>
+							</Point>
+							<Point ID="38">
+								<StatusCode>83</StatusCode>
+								<Value>76.17456</Value>
+							</Point>
+							<Point ID="39">
+								<StatusCode>83</StatusCode>
+								<Value>90.94365</Value>
+							</Point>
+							<Point ID="40">
+								<StatusCode>83</StatusCode>
+								<Value>85.75143</Value>
+							</Point>
+							<Point ID="41">
+								<StatusCode>83</StatusCode>
+								<Value>70.12398</Value>
+							</Point>
+							<Point ID="42">
+								<Value>58.54716</Value>
+							</Point>
+							<Point ID="8">
+								<StatusCode>83</StatusCode>
+								<Value>-12.22315</Value>
+							</Point>
+							<Point ID="47">
+								<Value>17.74471</Value>
+							</Point>
+							<Point ID="48">
+								<Value>270.1988</Value>
+							</Point>
+							<Point ID="9">
+								<StatusCode>83</StatusCode>
+								<Value>2.17716</Value>
+							</Point>
+							<Point ID="10">
+								<StatusCode>83</StatusCode>
+								<Value>-2.751673</Value>
+							</Point>
+							<Point ID="11">
+								<StatusCode>83</StatusCode>
+								<Value>-2.084231</Value>
+							</Point>
+							<Point ID="12">
+								<StatusCode>83</StatusCode>
+								<Value>2.904958</Value>
+							</Point>
+							<Point ID="43">
+								<Value>0.06155391</Value>
+							</Point>
+							<Point ID="13">
+								<StatusCode>83</StatusCode>
+								<Value>-14.90009</Value>
+							</Point>
+							<Point ID="14">
+								<StatusCode>83</StatusCode>
+								<Value>-15.63039</Value>
+							</Point>
+							<Point ID="15">
+								<StatusCode>83</StatusCode>
+								<Value>-20.55809</Value>
+							</Point>
+							<Point ID="16">
+								<StatusCode>83</StatusCode>
+								<Value>-19.88983</Value>
+							</Point>
+							<Point ID="44">
+								<Value>-17.7446</Value>
+							</Point>
+							<Point ID="17">
+								<StatusCode>83</StatusCode>
+								<Value>0.2439632</Value>
+							</Point>
+							<Point ID="18">
+								<StatusCode>83</StatusCode>
+								<Value>1.971232</Value>
+							</Point>
+							<Point ID="19">
+								<StatusCode>83</StatusCode>
+								<Value>0.2160982</Value>
+							</Point>
+							<Point ID="20">
+								<StatusCode>83</StatusCode>
+								<Value>1.787967</Value>
+							</Point>
+							<Point ID="45">
+								<Value>1.054815</Value>
+							</Point>
+							<Point ID="21">
+								<StatusCode>83</StatusCode>
+								<Value>-5.255115</Value>
+							</Point>
+							<Point ID="22">
+								<StatusCode>83</StatusCode>
+								<Value>3.772297</Value>
+							</Point>
+							<Point ID="23">
+								<StatusCode>83</StatusCode>
+								<Value>4.149773</Value>
+							</Point>
+							<Point ID="24">
+								<StatusCode>83</StatusCode>
+								<Value>-7.868701</Value>
+							</Point>
+							<Point ID="25">
+								<StatusCode>83</StatusCode>
+								<Value>-13.37049</Value>
+							</Point>
+							<Point ID="26">
+								<StatusCode>83</StatusCode>
+								<Value>-11.35772</Value>
+							</Point>
+							<Point ID="27">
+								<StatusCode>83</StatusCode>
+								<Value>-10.76321</Value>
+							</Point>
+							<Point ID="28">
+								<StatusCode>83</StatusCode>
+								<Value>-13.40118</Value>
+							</Point>
+							<Point ID="29">
+								<StatusCode>83</StatusCode>
+								<Value>41.04601</Value>
+							</Point>
+							<Point ID="30">
+								<StatusCode>83</StatusCode>
+								<Value>34.31991</Value>
+							</Point>
+							<Point ID="31">
+								<StatusCode>83</StatusCode>
+								<Value>22.27525</Value>
+							</Point>
+							<Point ID="32">
+								<StatusCode>83</StatusCode>
+								<Value>36.75959</Value>
+							</Point>
+							<Point ID="33">
+								<StatusCode>83</StatusCode>
+								<Value>2.991062</Value>
+							</Point>
+						</Cell>
+						<Cell Index="1">
+							<Point ID="50">
+								<Value>8256</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<StatusCode>83</StatusCode>
+								<Value>12.19351</Value>
+							</Point>
+							<Point ID="3">
+								<StatusCode>83</StatusCode>
+								<Value>240.9193</Value>
+							</Point>
+							<Point ID="4">
+								<StatusCode>83</StatusCode>
+								<Value>-5.92656</Value>
+							</Point>
+							<Point ID="5">
+								<StatusCode>83</StatusCode>
+								<Value>-10.65635</Value>
+							</Point>
+							<Point ID="6">
+								<StatusCode>83</StatusCode>
+								<Value>-2.437174</Value>
+							</Point>
+							<Point ID="7">
+								<StatusCode>83</StatusCode>
+								<Value>38.67363</Value>
+							</Point>
+							<Point ID="38">
+								<StatusCode>83</StatusCode>
+								<Value>52.09694</Value>
+							</Point>
+							<Point ID="39">
+								<StatusCode>83</StatusCode>
+								<Value>60.96582</Value>
+							</Point>
+							<Point ID="40">
+								<StatusCode>83</StatusCode>
+								<Value>59.53481</Value>
+							</Point>
+							<Point ID="41">
+								<StatusCode>83</StatusCode>
+								<Value>50.52997</Value>
+							</Point>
+							<Point ID="42">
+								<Value>38.67363</Value>
+							</Point>
+							<Point ID="8">
+								<StatusCode>83</StatusCode>
+								<Value>-12.27888</Value>
+							</Point>
+							<Point ID="47">
+								<Value>12.19351</Value>
+							</Point>
+							<Point ID="48">
+								<Value>240.9193</Value>
+							</Point>
+							<Point ID="9">
+								<StatusCode>83</StatusCode>
+								<Value>-0.1005539</Value>
+							</Point>
+							<Point ID="10">
+								<StatusCode>83</StatusCode>
+								<Value>-13.1286</Value>
+							</Point>
+							<Point ID="11">
+								<StatusCode>83</StatusCode>
+								<Value>-11.83386</Value>
+							</Point>
+							<Point ID="12">
+								<StatusCode>83</StatusCode>
+								<Value>1.356766</Value>
+							</Point>
+							<Point ID="43">
+								<Value>-5.92656</Value>
+							</Point>
+							<Point ID="13">
+								<StatusCode>83</StatusCode>
+								<Value>-3.365421</Value>
+							</Point>
+							<Point ID="14">
+								<StatusCode>83</StatusCode>
+								<Value>-4.839187</Value>
+							</Point>
+							<Point ID="15">
+								<StatusCode>83</StatusCode>
+								<Value>-17.85478</Value>
+							</Point>
+							<Point ID="16">
+								<StatusCode>83</StatusCode>
+								<Value>-16.56598</Value>
+							</Point>
+							<Point ID="44">
+								<Value>-10.65635</Value>
+							</Point>
+							<Point ID="17">
+								<StatusCode>83</StatusCode>
+								<Value>-4.566086</Value>
+							</Point>
+							<Point ID="18">
+								<StatusCode>83</StatusCode>
+								<Value>-0.003975701</Value>
+							</Point>
+							<Point ID="19">
+								<StatusCode>83</StatusCode>
+								<Value>-4.654092</Value>
+							</Point>
+							<Point ID="20">
+								<StatusCode>83</StatusCode>
+								<Value>-0.5245404</Value>
+							</Point>
+							<Point ID="45">
+								<Value>-2.437174</Value>
+							</Point>
+							<Point ID="21">
+								<StatusCode>83</StatusCode>
+								<Value>3.179314</Value>
+							</Point>
+							<Point ID="22">
+								<StatusCode>83</StatusCode>
+								<Value>5.231956</Value>
+							</Point>
+							<Point ID="23">
+								<StatusCode>83</StatusCode>
+								<Value>4.991972</Value>
+							</Point>
+							<Point ID="24">
+								<StatusCode>83</StatusCode>
+								<Value>-4.941213</Value>
+							</Point>
+							<Point ID="25">
+								<StatusCode>83</StatusCode>
+								<Value>-12.58427</Value>
+							</Point>
+							<Point ID="26">
+								<StatusCode>83</StatusCode>
+								<Value>-10.60559</Value>
+							</Point>
+							<Point ID="27">
+								<StatusCode>83</StatusCode>
+								<Value>-11.16393</Value>
+							</Point>
+							<Point ID="28">
+								<StatusCode>83</StatusCode>
+								<Value>-14.76173</Value>
+							</Point>
+							<Point ID="29">
+								<StatusCode>83</StatusCode>
+								<Value>28.07731</Value>
+							</Point>
+							<Point ID="30">
+								<StatusCode>83</StatusCode>
+								<Value>18.22593</Value>
+							</Point>
+							<Point ID="31">
+								<StatusCode>83</StatusCode>
+								<Value>21.13768</Value>
+							</Point>
+							<Point ID="32">
+								<StatusCode>83</StatusCode>
+								<Value>24.19823</Value>
+							</Point>
+							<Point ID="33">
+								<StatusCode>83</StatusCode>
+								<Value>7.880544</Value>
+							</Point>
+						</Cell>
+						<Cell Index="2">
+							<Point ID="50">
+								<Value>8384</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<StatusCode>83</StatusCode>
+								<Value>8.605544</Value>
+							</Point>
+							<Point ID="3">
+								<StatusCode>83</StatusCode>
+								<Value>205.561</Value>
+							</Point>
+							<Point ID="4">
+								<StatusCode>83</StatusCode>
+								<Value>-7.763291</Value>
+							</Point>
+							<Point ID="5">
+								<StatusCode>83</StatusCode>
+								<Value>-3.713047</Value>
+							</Point>
+							<Point ID="6">
+								<StatusCode>83</StatusCode>
+								<Value>-0.703294</Value>
+							</Point>
+							<Point ID="7">
+								<StatusCode>83</StatusCode>
+								<Value>52.50669</Value>
+							</Point>
+							<Point ID="38">
+								<StatusCode>83</StatusCode>
+								<Value>70.38332</Value>
+							</Point>
+							<Point ID="39">
+								<StatusCode>83</StatusCode>
+								<Value>61.2058</Value>
+							</Point>
+							<Point ID="40">
+								<StatusCode>83</StatusCode>
+								<Value>72.41052</Value>
+							</Point>
+							<Point ID="41">
+								<StatusCode>83</StatusCode>
+								<Value>82.04294</Value>
+							</Point>
+							<Point ID="42">
+								<Value>52.50669</Value>
+							</Point>
+							<Point ID="8">
+								<StatusCode>83</StatusCode>
+								<Value>-14.4785</Value>
+							</Point>
+							<Point ID="47">
+								<Value>8.605544</Value>
+							</Point>
+							<Point ID="48">
+								<Value>205.561</Value>
+							</Point>
+							<Point ID="9">
+								<StatusCode>83</StatusCode>
+								<Value>-8.009227</Value>
+							</Point>
+							<Point ID="10">
+								<StatusCode>83</StatusCode>
+								<Value>-7.603253</Value>
+							</Point>
+							<Point ID="11">
+								<StatusCode>83</StatusCode>
+								<Value>-7.51263</Value>
+							</Point>
+							<Point ID="12">
+								<StatusCode>83</StatusCode>
+								<Value>-7.928056</Value>
+							</Point>
+							<Point ID="43">
+								<Value>-7.763291</Value>
+							</Point>
+							<Point ID="13">
+								<StatusCode>83</StatusCode>
+								<Value>-3.879597</Value>
+							</Point>
+							<Point ID="14">
+								<StatusCode>83</StatusCode>
+								<Value>-3.957028</Value>
+							</Point>
+							<Point ID="15">
+								<StatusCode>83</StatusCode>
+								<Value>-3.554423</Value>
+							</Point>
+							<Point ID="16">
+								<StatusCode>83</StatusCode>
+								<Value>-3.461142</Value>
+							</Point>
+							<Point ID="44">
+								<Value>-3.713047</Value>
+							</Point>
+							<Point ID="17">
+								<StatusCode>83</StatusCode>
+								<Value>-0.6417611</Value>
+							</Point>
+							<Point ID="18">
+								<StatusCode>83</StatusCode>
+								<Value>-0.7883499</Value>
+							</Point>
+							<Point ID="19">
+								<StatusCode>83</StatusCode>
+								<Value>-0.6328872</Value>
+							</Point>
+							<Point ID="20">
+								<StatusCode>83</StatusCode>
+								<Value>-0.7501784</Value>
+							</Point>
+							<Point ID="45">
+								<Value>-0.703294</Value>
+							</Point>
+							<Point ID="21">
+								<StatusCode>83</StatusCode>
+								<Value>2.214065</Value>
+							</Point>
+							<Point ID="22">
+								<StatusCode>83</StatusCode>
+								<Value>3.996648</Value>
+							</Point>
+							<Point ID="23">
+								<StatusCode>83</StatusCode>
+								<Value>-0.9393091</Value>
+							</Point>
+							<Point ID="24">
+								<StatusCode>83</StatusCode>
+								<Value>-2.48239</Value>
+							</Point>
+							<Point ID="25">
+								<StatusCode>83</StatusCode>
+								<Value>-12.42217</Value>
+							</Point>
+							<Point ID="26">
+								<StatusCode>83</StatusCode>
+								<Value>-13.31697</Value>
+							</Point>
+							<Point ID="27">
+								<StatusCode>83</StatusCode>
+								<Value>-15.83689</Value>
+							</Point>
+							<Point ID="28">
+								<StatusCode>83</StatusCode>
+								<Value>-16.33798</Value>
+							</Point>
+							<Point ID="29">
+								<StatusCode>83</StatusCode>
+								<Value>21.94122</Value>
+							</Point>
+							<Point ID="30">
+								<StatusCode>83</StatusCode>
+								<Value>30.00978</Value>
+							</Point>
+							<Point ID="31">
+								<StatusCode>83</StatusCode>
+								<Value>39.88395</Value>
+							</Point>
+							<Point ID="32">
+								<StatusCode>83</StatusCode>
+								<Value>31.04</Value>
+							</Point>
+							<Point ID="33">
+								<StatusCode>83</StatusCode>
+								<Value>-0.2395019</Value>
+							</Point>
+						</Cell>
+						<Cell Index="3">
+							<Point ID="50">
+								<Value>8384</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<StatusCode>83</StatusCode>
+								<Value>4.633299</Value>
+							</Point>
+							<Point ID="3">
+								<StatusCode>83</StatusCode>
+								<Value>186.1083</Value>
+							</Point>
+							<Point ID="4">
+								<StatusCode>83</StatusCode>
+								<Value>-4.606994</Value>
+							</Point>
+							<Point ID="5">
+								<StatusCode>83</StatusCode>
+								<Value>-0.4930243</Value>
+							</Point>
+							<Point ID="6">
+								<StatusCode>83</StatusCode>
+								<Value>-0.9846956</Value>
+							</Point>
+							<Point ID="7">
+								<StatusCode>83</StatusCode>
+								<Value>51.46976</Value>
+							</Point>
+							<Point ID="38">
+								<StatusCode>83</StatusCode>
+								<Value>67.3741</Value>
+							</Point>
+							<Point ID="39">
+								<StatusCode>83</StatusCode>
+								<Value>79.2823</Value>
+							</Point>
+							<Point ID="40">
+								<StatusCode>83</StatusCode>
+								<Value>71.73189</Value>
+							</Point>
+							<Point ID="41">
+								<StatusCode>83</StatusCode>
+								<Value>59.61406</Value>
+							</Point>
+							<Point ID="42">
+								<Value>51.46976</Value>
+							</Point>
+							<Point ID="8">
+								<StatusCode>83</StatusCode>
+								<Value>-18.45666</Value>
+							</Point>
+							<Point ID="47">
+								<Value>4.633299</Value>
+							</Point>
+							<Point ID="48">
+								<Value>186.1083</Value>
+							</Point>
+							<Point ID="9">
+								<StatusCode>83</StatusCode>
+								<Value>-4.420674</Value>
+							</Point>
+							<Point ID="10">
+								<StatusCode>83</StatusCode>
+								<Value>-4.935955</Value>
+							</Point>
+							<Point ID="11">
+								<StatusCode>83</StatusCode>
+								<Value>-4.792399</Value>
+							</Point>
+							<Point ID="12">
+								<StatusCode>83</StatusCode>
+								<Value>-4.278947</Value>
+							</Point>
+							<Point ID="43">
+								<Value>-4.606994</Value>
+							</Point>
+							<Point ID="13">
+								<StatusCode>83</StatusCode>
+								<Value>-0.1636817</Value>
+							</Point>
+							<Point ID="14">
+								<StatusCode>83</StatusCode>
+								<Value>-0.308136</Value>
+							</Point>
+							<Point ID="15">
+								<StatusCode>83</StatusCode>
+								<Value>-0.8203633</Value>
+							</Point>
+							<Point ID="16">
+								<StatusCode>83</StatusCode>
+								<Value>-0.679916</Value>
+							</Point>
+							<Point ID="44">
+								<Value>-0.4930243</Value>
+							</Point>
+							<Point ID="17">
+								<StatusCode>83</StatusCode>
+								<Value>-1.064858</Value>
+							</Point>
+							<Point ID="18">
+								<StatusCode>83</StatusCode>
+								<Value>-0.8976367</Value>
+							</Point>
+							<Point ID="19">
+								<StatusCode>83</StatusCode>
+								<Value>-1.077653</Value>
+							</Point>
+							<Point ID="20">
+								<StatusCode>83</StatusCode>
+								<Value>-0.8986354</Value>
+							</Point>
+							<Point ID="45">
+								<Value>-0.9846956</Value>
+							</Point>
+							<Point ID="21">
+								<StatusCode>83</StatusCode>
+								<Value>2.440432</Value>
+							</Point>
+							<Point ID="22">
+								<StatusCode>83</StatusCode>
+								<Value>2.245728</Value>
+							</Point>
+							<Point ID="23">
+								<StatusCode>83</StatusCode>
+								<Value>-0.3375488</Value>
+							</Point>
+							<Point ID="24">
+								<StatusCode>83</StatusCode>
+								<Value>-0.4565307</Value>
+							</Point>
+							<Point ID="25">
+								<StatusCode>83</StatusCode>
+								<Value>-15.34706</Value>
+							</Point>
+							<Point ID="26">
+								<StatusCode>83</StatusCode>
+								<Value>-19.40235</Value>
+							</Point>
+							<Point ID="27">
+								<StatusCode>83</StatusCode>
+								<Value>-20.17566</Value>
+							</Point>
+							<Point ID="28">
+								<StatusCode>83</StatusCode>
+								<Value>-18.90157</Value>
+							</Point>
+							<Point ID="29">
+								<StatusCode>83</StatusCode>
+								<Value>38.21677</Value>
+							</Point>
+							<Point ID="30">
+								<StatusCode>83</StatusCode>
+								<Value>27.0457</Value>
+							</Point>
+							<Point ID="31">
+								<StatusCode>83</StatusCode>
+								<Value>24.46152</Value>
+							</Point>
+							<Point ID="32">
+								<StatusCode>83</StatusCode>
+								<Value>28.24742</Value>
+							</Point>
+							<Point ID="33">
+								<StatusCode>83</StatusCode>
+								<Value>0.3136864</Value>
+							</Point>
+						</Cell>
+						<Cell Index="4">
+							<Point ID="50">
+								<Value>192</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>2.649086</Value>
+							</Point>
+							<Point ID="3">
+								<Value>8.595926</Value>
+							</Point>
+							<Point ID="4">
+								<Value>2.619328</Value>
+							</Point>
+							<Point ID="5">
+								<Value>0.3959457</Value>
+							</Point>
+							<Point ID="6">
+								<Value>-0.9901634</Value>
+							</Point>
+							<Point ID="7">
+								<Value>47.28773</Value>
+							</Point>
+							<Point ID="38">
+								<Value>60.58363</Value>
+							</Point>
+							<Point ID="39">
+								<Value>68.44417</Value>
+							</Point>
+							<Point ID="40">
+								<Value>70.29798</Value>
+							</Point>
+							<Point ID="41">
+								<Value>62.25092</Value>
+							</Point>
+							<Point ID="42">
+								<Value>47.28773</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-19.10905</Value>
+							</Point>
+							<Point ID="47">
+								<Value>2.649086</Value>
+							</Point>
+							<Point ID="48">
+								<Value>8.595926</Value>
+							</Point>
+							<Point ID="9">
+								<Value>1.504677</Value>
+							</Point>
+							<Point ID="10">
+								<Value>3.98246</Value>
+							</Point>
+							<Point ID="11">
+								<Value>3.750051</Value>
+							</Point>
+							<Point ID="12">
+								<Value>1.240123</Value>
+							</Point>
+							<Point ID="43">
+								<Value>2.619328</Value>
+							</Point>
+							<Point ID="13">
+								<Value>-0.9839996</Value>
+							</Point>
+							<Point ID="14">
+								<Value>-0.7178321</Value>
+							</Point>
+							<Point ID="15">
+								<Value>1.759181</Value>
+							</Point>
+							<Point ID="16">
+								<Value>1.526435</Value>
+							</Point>
+							<Point ID="44">
+								<Value>0.3959457</Value>
+							</Point>
+							<Point ID="17">
+								<Value>-0.5823798</Value>
+							</Point>
+							<Point ID="18">
+								<Value>-1.452972</Value>
+							</Point>
+							<Point ID="19">
+								<Value>-0.5714477</Value>
+							</Point>
+							<Point ID="20">
+								<Value>-1.35385</Value>
+							</Point>
+							<Point ID="45">
+								<Value>-0.9901634</Value>
+							</Point>
+							<Point ID="21">
+								<Value>-0.2890747</Value>
+							</Point>
+							<Point ID="22">
+								<Value>0.4165185</Value>
+							</Point>
+							<Point ID="23">
+								<Value>1.245532</Value>
+							</Point>
+							<Point ID="24">
+								<Value>2.038642</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-17.95874</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-19.362</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-20.2266</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-18.88886</Value>
+							</Point>
+							<Point ID="29">
+								<Value>29.9025</Value>
+							</Point>
+							<Point ID="30">
+								<Value>24.8342</Value>
+							</Point>
+							<Point ID="31">
+								<Value>25.59076</Value>
+							</Point>
+							<Point ID="32">
+								<Value>29.8165</Value>
+							</Point>
+							<Point ID="33">
+								<Value>-1.498703</Value>
+							</Point>
+						</Cell>
+						<Cell Index="5">
+							<Point ID="50">
+								<Value>192</Value>
+							</Point>
+							<Point ID="49">
+								<Value>0</Value>
+							</Point>
+							<Point ID="2">
+								<Value>4.547194</Value>
+							</Point>
+							<Point ID="3">
+								<Value>280.4961</Value>
+							</Point>
+							<Point ID="4">
+								<Value>0.828358</Value>
+							</Point>
+							<Point ID="5">
+								<Value>-4.471107</Value>
+							</Point>
+							<Point ID="6">
+								<Value>-0.6307358</Value>
+							</Point>
+							<Point ID="7">
+								<Value>52.0694</Value>
+							</Point>
+							<Point ID="38">
+								<Value>75.55222</Value>
+							</Point>
+							<Point ID="39">
+								<Value>73.03561</Value>
+							</Point>
+							<Point ID="40">
+								<Value>66.32655</Value>
+							</Point>
+							<Point ID="41">
+								<Value>69.06187</Value>
+							</Point>
+							<Point ID="42">
+								<Value>52.0694</Value>
+							</Point>
+							<Point ID="8">
+								<Value>-19.12878</Value>
+							</Point>
+							<Point ID="47">
+								<Value>4.547194</Value>
+							</Point>
+							<Point ID="48">
+								<Value>280.4961</Value>
+							</Point>
+							<Point ID="9">
+								<Value>-0.5932001</Value>
+							</Point>
+							<Point ID="10">
+								<Value>2.411842</Value>
+							</Point>
+							<Point ID="11">
+								<Value>2.265829</Value>
+							</Point>
+							<Point ID="12">
+								<Value>-0.7710409</Value>
+							</Point>
+							<Point ID="43">
+								<Value>0.828358</Value>
+							</Point>
+							<Point ID="13">
+								<Value>-6.075545</Value>
+							</Point>
+							<Point ID="14">
+								<Value>-5.88701</Value>
+							</Point>
+							<Point ID="15">
+								<Value>-2.891987</Value>
+							</Point>
+							<Point ID="16">
+								<Value>-3.029886</Value>
+							</Point>
+							<Point ID="44">
+								<Value>-4.471107</Value>
+							</Point>
+							<Point ID="17">
+								<Value>-0.1504383</Value>
+							</Point>
+							<Point ID="18">
+								<Value>-1.189573</Value>
+							</Point>
+							<Point ID="19">
+								<Value>-0.1153298</Value>
+							</Point>
+							<Point ID="20">
+								<Value>-1.0676</Value>
+							</Point>
+							<Point ID="45">
+								<Value>-0.6307358</Value>
+							</Point>
+							<Point ID="21">
+								<Value>-1.422761</Value>
+							</Point>
+							<Point ID="22">
+								<Value>2.185752</Value>
+							</Point>
+							<Point ID="23">
+								<Value>1.464531</Value>
+							</Point>
+							<Point ID="24">
+								<Value>-0.3383643</Value>
+							</Point>
+							<Point ID="25">
+								<Value>-18.29148</Value>
+							</Point>
+							<Point ID="26">
+								<Value>-19.55705</Value>
+							</Point>
+							<Point ID="27">
+								<Value>-20.49599</Value>
+							</Point>
+							<Point ID="28">
+								<Value>-18.17061</Value>
+							</Point>
+							<Point ID="29">
+								<Value>27.74277</Value>
+							</Point>
+							<Point ID="30">
+								<Value>33.13288</Value>
+							</Point>
+							<Point ID="31">
+								<Value>28.40749</Value>
+							</Point>
+							<Point ID="32">
+								<Value>28.98038</Value>
+							</Point>
+							<Point ID="33">
+								<Value>-1.805618</Value>
+							</Point>
+						</Cell>
+					</Column>
+				</Profile>
+			</Parameters>
+		</SensorData>
+		<SensorData ID="5819-35" Descr="Conductivity Sensor #35" NodeTypeID="2060" SerialNo="35" ProdNo="5819" ProdName="Conductivity Sensor" ProtocolVer="6">
+			<Parameters>
+				<Point ID="1" Descr="Conductivity" Type="VT_R4" Format="%0.3f" Unit="mS/cm" RangeMin="0" RangeMax="75">
+					<Value>34.95282</Value>
+				</Point>
+				<Point ID="2" Descr="Temperature" Type="VT_R4" Format="%0.3f" Unit="Deg.C" RangeMin="-5" RangeMax="40">
+					<Value>9.858524</Value>
+				</Point>
+				<Point ID="3" Descr="Salinity" Type="VT_R4" Format="%0.3f" Unit="PSU" RangeMin="0" RangeMax="43">
+					<Value>1.048101</Value>
+				</Point>
+				<Point ID="4" Descr="Density" Type="VT_R4" Format="%0.3f" Unit="kg/m3" RangeMin="995" RangeMax="1075">
+					<Value>230190</Value>
+				</Point>
+				<Point ID="5" Descr="Soundspeed" Type="VT_R4" Format="%0.3f" Unit="m/s" RangeMin="1390" RangeMax="1650">
+					<Value>59014.7</Value>
+				</Point>
+			</Parameters>
+		</SensorData>
+		<SensorData ID="SBE37-3333" Descr="SeaBird SBE #3333" NodeTypeID="2999" SerialNo="3333" ProdNo="SBE37" ProdName="SeaBird SBE" ProtocolVer="6">
+			<StatusCode>6</StatusCode>
+			<Parameters>
+				<Point ID="0" Descr="Temperature" Type="VT_R4" Unit="Deg.C">
+					<StatusCode>68</StatusCode>
+					<Value>0</Value>
+				</Point>
+				<Point ID="1" Descr="Conductivity" Type="VT_R4" Unit="S/m">
+					<StatusCode>68</StatusCode>
+					<Value>0</Value>
+				</Point>
+				<Point ID="2" Descr="Pressure" Type="VT_R4" Unit="dBar">
+					<StatusCode>68</StatusCode>
+					<Value>0</Value>
+				</Point>
+				<Point ID="3" Descr="Oxygen" Type="VT_R4" Unit="mg/l">
+					<StatusCode>68</StatusCode>
+					<Value>0</Value>
+				</Point>
+				<Point ID="4" Descr="Sound Velocity" Type="VT_R4" Unit="m/s">
+					<StatusCode>68</StatusCode>
+					<Value>0</Value>
+				</Point>
+			</Parameters>
+		</SensorData>
+		<SensorData ID="AN100-14257" Descr="Analog Sensors #14257" NodeTypeID="240" SerialNo="14257" ProdNo="AN100" ProdName="Analog Sensors" ProtocolVer="6">
+			<Parameters>
+				<Point ID="30" Descr="Turbidity #14257" Type="VT_R4" Unit="FTU" RangeMin="0" RangeMax="125">
+					<Value>0.6851342</Value>
+				</Point>
+				<Point ID="31" Descr="Turbidity #14257 Raw data" Type="VT_R4" Unit="V" RangeMin="0.0" RangeMax="5.0">
+					<Value>0.0539446</Value>
+				</Point>
+			</Parameters>
+		</SensorData>
+		<SystemData ID="SYSDATA-0" Descr="System Parameters">
+			<Parameters>
+				<Point ID="0" Descr="Input Voltage" Type="VT_R4" Format="%.1f" Unit="V" RangeMin="0" RangeMax="14">
+					<Value>6.624053</Value>
+				</Point>
+				<Point ID="5" Descr="Memory Used" Type="VT_I4" Unit="Bytes" RangeMin="0" RangeMax="32000000">
+					<Value>18866176</Value>
+				</Point>
+			</Parameters>
+		</SystemData>
+		<SpecifiedInterval>900</SpecifiedInterval>
+		<ActualInterval>706.576</ActualInterval>
+	</Data>
+	<Notifications />
+</Device>
