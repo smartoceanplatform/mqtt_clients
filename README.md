@@ -12,7 +12,7 @@ docker run publisher:latest
 To customize configuration parameters pass the absolut path of the YAML configuration file (*$PATH_TO_YAML*) as argument in the docker command:
 
 ```bash
-docker run -v $PATH_TO_YAML:/etc/config.yaml publisher:latest
+docker run -v $PATH_TO_YAML:/etc/publisher/config.yaml publisher:latest
 ```
 
 To mount a different data folder (*$PATH_TO_DIR*) override the following directory as argument in the docker command:
