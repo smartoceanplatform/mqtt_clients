@@ -1,11 +1,27 @@
-# Broker client configuration file
-host: "127.0.0.1" #ClusterURL
-port: 1883
-clientId: "virtualAADIProvider"
-authentication:
-    token:
+# Broker client configuration file for replicating data from another broker
+broker:
+  host: "127.0.0.1" #ClusterURL
+  port: 1883
+  clientId: "AADIProvider"
+  authentication:
+    username:
+    password:
 topics:
-    - publishTopic: "smartocean/pd1/austevoll-nord/raw"
-      source: data
+    - topic: "smartocean/pilotdemo_0001/austevoll/north/seaguardII_0001"
       # https://hivemq.github.io/hivemq-mqtt-client/docs/mqtt-operations/publish/#quality-of-service-qos
       qos: 2 # 0 - AT_MOST_ONCE  | 1 - AT_MOST_ONCE | 2 - EXACTLY_ONCE
+sourceBroker:
+  host: "127.0.0.1" #ClusterURL
+  port: 1883
+  clientId: "AADIProvider"
+  authentication:
+    username:
+    password:
+  topics:
+    - topic: "smartocean/pilotdemo_0001/austevoll/north/seaguardII_0001"
+      qos: 2 # 0 - AT_MOST_ONCE  | 1 - AT_MOST_ONCE | 2 - EXACTLY_ONCE
+    - topic: "smartocean/pilotdemo_0001/austevoll/south/seaguardII_0002"
+      qos: 2 # 0 - AT_MOST_ONCE  | 1 - AT_MOST_ONCE | 2 - EXACTLY_ONCE
+    # Wildcard Alternative:
+    # - topic: "smartocean/pilotdemo_0001/austevoll/#"
+    #    qos: 2 # 0 - AT_MOST_ONCE  | 1 - AT_MOST_ONCE | 2 - EXACTLY_ONCE

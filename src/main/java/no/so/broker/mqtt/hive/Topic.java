@@ -2,21 +2,13 @@ package no.so.broker.mqtt.hive;
 
 import com.hivemq.client.mqtt.datatypes.MqttQos;
 
+import java.util.Optional;
+
 // Class automatically factored by yaml parser constructor
 public class Topic {
 
-    private String publishTopic;
-    private String source;
+    private String topic;
     private int qos;
-
-
-    public String getSource() {
-        return source;
-    }
-
-    public void setSource(String source) {
-        this.source = source;
-    }
 
     /* Changes qos in yaml config into MqttQos Enum
      * https://hivemq.github.io/hivemq-mqtt-client/docs/mqtt-operations/publish/#quality-of-service-qos
@@ -32,11 +24,12 @@ public class Topic {
         this.qos = qos;
     }
 
-    public String getPublishTopic() {
-        return publishTopic;
+    public String getTopic() {
+        return topic;
     }
 
-    protected void setPublishTopic(String publish_topic) {
-        this.publishTopic = publish_topic;
+    protected void setTopic(String _topic) {
+        this.topic = _topic;
     }
+
 }
