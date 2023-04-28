@@ -1,10 +1,16 @@
-host: "127.0.0.1"
-port: 1883 #websocket 1888
-clientId: "virtualAADIProvider"
-authentication:
-    token:
-topics:
-    - publishTopic: "smartocean/pd1/austevoll-nord/raw"
-      source: "data"
-      # https://hivemq.github.io/hivemq-mqtt-client/docs/mqtt-operations/publish/#quality-of-service-qos
-      qos: 2 # 0 - AT_MOST_ONCE  | 1 - AT_MOST_ONCE | 2 - EXACTLY_ONCE
+# Broker client configuration file for replicating data from a source folder
+broker:
+  host: "127.0.0.1"
+  port: 1883 #websocket 1888
+  clientId: "virtualAADIProvider"
+  authentication:
+    username:
+    password:
+  topics:
+      - topic: "smartocean/pilotdemo_0001/austevoll/north/seaguardII_0001"
+          # https://hivemq.github.io/hivemq-mqtt-client/docs/mqtt-operations/publish/#quality-of-service-qos
+        qos: 2 # 0 - AT_MOST_ONCE  | 1 - AT_MOST_ONCE | 2 - EXACTLY_ONCE
+delay: 30 # seconds
+sourceFolder: "data"
+
+

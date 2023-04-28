@@ -1,77 +1,93 @@
 package no.so.broker.mqtt.hive;
 
+import org.yaml.snakeyaml.DumperOptions;
+import org.yaml.snakeyaml.LoaderOptions;
 import org.yaml.snakeyaml.TypeDescription;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.Constructor;
 import org.yaml.snakeyaml.introspector.BeanAccess;
+import org.yaml.snakeyaml.representer.Representer;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.List;
 
 // Class automatically factored by yaml parser constructor
 public class ClientConfig {
 
     private static ClientConfig instance = null; //singleton
 
-    private String clientId;
-    private String host;
-    private int port;
-    private Object authentication; //TODO
+    private BrokerConfig broker;
 
-    private List<Topic> topics;
+    // The source of data can be either a source folder or a subscribed topic from a broker
+    private String sourceFolder;
+    private int delay;
+
+    private BrokerConfig sourceBroker;
+
 
     public ClientConfig() {
 
     }
 
-    public Object getAuthentication() {
-        return authentication;
+    public BrokerConfig getBroker() {
+        return this.broker;
     }
 
-    private void setAuthentication(Object authentication) {
-        this.authentication = authentication;
+    public void setBroker(BrokerConfig broker) {
+        this.broker = broker;
     }
 
-    public String getClient_id() {
-        return clientId;
+    public BrokerConfig getSourceBroker() {
+        return this.sourceBroker;
     }
 
-    public String getHost() {
-        return host;
+    public void setSourceBroker(BrokerConfig broker){
+        this.sourceBroker = broker;
     }
 
-    public int getPort() {
-        return port;
+    public boolean isSourceFolder(){
+        return this.sourceFolder != null;
     }
 
-    public List<Topic> getTopics() {return this.topics;}
-
-
-    protected void setClientId(String clientId) {
-        this.clientId = clientId;
+    public String getSourceFolder() {
+        return sourceFolder;
     }
 
-    protected void setHost(String host) {
-        this.host = host;
+    public void setSourceFolder(String source) {
+        this.sourceFolder = source;
     }
 
-    protected void setPort(int port) {
-        this.port = port;
+    public int getDelay() {
+        return delay;
     }
 
-    private void setTopics(List<Topic> topics) {
-        this.topics = topics;
+    public void setDelay(int delay) {
+        this.delay = delay < 0 ? 30 : delay; // delay cannot be negative
     }
 
     public static ClientConfig loadFromFile(Path config) throws IOException {
 
-        Constructor constructor = new Constructor(ClientConfig.class); //ClientConfig.class is root
+        // SNAKEYAML lib 2.0
+        LoaderOptions options = new LoaderOptions();
+        options.setAllowRecursiveKeys(true);
+        options.setMaxAliasesForCollections(3);
+
+        Constructor constructor = new Constructor(ClientConfig.class,options); //ClientConfig.class is root
         TypeDescription configDescription = new TypeDescription(ClientConfig.class);
+        Representer representer = new Representer(new DumperOptions());
+        representer.getPropertyUtils().setSkipMissingProperties(true);
+
+        configDescription.addPropertyParameters("Broker", BrokerConfig.class);
+        configDescription.addPropertyParameters("Authentication", Authentication.class);
         configDescription.addPropertyParameters("Topics", Topic.class);
+
+        configDescription.substituteProperty("sourceBroker",BrokerConfig.class,"getSourceBroker","setSourceBroker");
+        configDescription.setExcludes("sourceBroker"); //"sourceFolder",
+
         constructor.addTypeDescription(configDescription);
-        Yaml yaml = new Yaml(constructor);
+        representer.addTypeDescription(configDescription);
+        Yaml yaml = new Yaml(constructor,representer);
         yaml.setBeanAccess(BeanAccess.FIELD);
         instance = yaml.load(Files.newInputStream(config));
         yaml.setBeanAccess(BeanAccess.DEFAULT);
@@ -84,12 +100,12 @@ public class ClientConfig {
 
     public static void main(String args[]) throws IOException {
 
-        Constructor constructor = new Constructor(ClientConfig.class);
-        TypeDescription configDescription = new TypeDescription(ClientConfig.class);
-        configDescription.addPropertyParameters("topics", Topic.class);
-        constructor.addTypeDescription(configDescription);
-        Yaml yaml = new Yaml(constructor);
-
-        ClientConfig config = yaml.load(Files.newInputStream(Path.of("config/config_dev_pub.yaml")));
+        ClientConfig config = ClientConfig.loadFromFile(Path.of("config/config.yaml"));
+        System.out.println(config.getBroker().getClientId());
+        System.out.println(config.getSourceFolder());
+        System.out.println(config.getDelay());
+        //System.out.println(config.getSourceBroker().getClientId());
+        System.out.println(config.getBroker().getAuthentication().hasCredentials());
     }
 }
+

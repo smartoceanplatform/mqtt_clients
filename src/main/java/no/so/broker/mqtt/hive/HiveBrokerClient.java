@@ -7,23 +7,30 @@ public class HiveBrokerClient {
 	
 	private final Mqtt5BlockingClient client;
 
-	private final ClientConfig clientConfig;
+	private final BrokerConfig clientConfig;
 	
-	public HiveBrokerClient(ClientConfig conf) {
+	public HiveBrokerClient(BrokerConfig conf) {
 
 		this.clientConfig = conf;
 
-		this.client = Mqtt5Client.builder() //TODO config data persistence and responsetopic
-		        .identifier(conf.getClient_id())
-		        .serverHost(conf.getHost())
-		        .serverPort(conf.getPort())
-		        .buildBlocking();
+		this.client = conf.getAuthentication().hasCredentials() ?
+				Mqtt5Client.builder()
+				.identifier(conf.getClientId())
+				.serverHost(conf.getHost())
+				.serverPort(conf.getPort())
+				.sslWithDefaultConfig()
+				.buildBlocking() :
+				Mqtt5Client.builder()
+				.identifier(conf.getClientId())
+				.serverHost(conf.getHost())
+				.serverPort(conf.getPort())
+				.buildBlocking();
 
 		System.out.println("Broker client configured successfully");
 	}
 
 	public Mqtt5BlockingClient getBrokerClient() { return this.client; }
 
-	public ClientConfig getBrokerClientConfig() {return this.clientConfig;}
+	public BrokerConfig getBrokerClientConfig() {return this.clientConfig;}
 
 }
