@@ -20,12 +20,15 @@ broker:
   topics:
       - topic: "my/test/topic1"
         qos: 2 # 0 - AT_MOST_ONCE  | 1 - AT_MOST_ONCE | 2 - EXACTLY_ONCE
+sourceFolder: "data"
+delay: 30 # seconds
+
 ``` 
 
 
 ### Data Sources
 
-To configure a folder as a data source use the top level ```sourceFolder`` and ```delay`` nodes to define the path to the folder and the delay interval between published data from the folder.
+To configure a folder as a data source use the top level ```sourceFolder``` and ```delay``` nodes to define the path to the folder and the delay interval in seconds between published files from the folder.
 
 To configure a broker as a data source use the top level ```sourceBroker``` node which uses the same key:values properties as the ```broker``` node described above. In this case, one could subcribe to multiple topics as sources of data using:
 
